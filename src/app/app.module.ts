@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ConnexionComponent } from './auth/connexion/connexion.component';
 import { EntrepriseComponent } from './auth/Inscription/entreprise/entreprise.component';
 import { TalentsComponent } from './auth/Inscription/talents/talents.component';
+import { PresentationComponent } from './presentation/presentation.component';
 
 
 const appRoutes : Routes =[
@@ -16,6 +17,7 @@ const appRoutes : Routes =[
   {path: 'connexion', component:ConnexionComponent},
   {path:'inscription/entreprise', component: EntrepriseComponent},
   {path: 'inscription/talents', component: TalentsComponent},
+  {path: 'presentation', component: PresentationComponent},
   {path:'', component: PageDaccComponent}
 ]
 
@@ -25,7 +27,8 @@ const appRoutes : Routes =[
     PageDaccComponent,
     ConnexionComponent,
     EntrepriseComponent,
-    TalentsComponent
+    TalentsComponent,
+    PresentationComponent
    
     
   ],

@@ -19,7 +19,9 @@
               </div>
           </div>
           <div class="col-10">
-            <form >
+            <form class="form1" style="display:block;"
+            *ngIf="talentInscriptionStep1 ==='1'"
+            >
               
               <div class="form-row mt-2 mb-5">
                 <div class="col">
@@ -37,11 +39,31 @@
               </div>
               
             </form>
+            <form  class="form2" style="display:block;"
+             *ngIf="talentInscriptionStep1 ==='2'"
+             [ngClass]="{'animate__animated animate__fadeInDown' : talentInscriptionStep1 ==='2'}">
+              
+              <div class="form-row mt-2 mb-5">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Pseudo*">
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Date de naissance*">
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Nationnalit*">
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Contact*">
+                </div>
+              </div>
+              
+            </form>
           </div>
           <div class="col" >
               <div class="icon_bor">
                   <div class="logo">
-                      <a > <b>connexions</b></a>
+                      <a > <b>connexions</b> </a>
                       
                   </div>
               </div>

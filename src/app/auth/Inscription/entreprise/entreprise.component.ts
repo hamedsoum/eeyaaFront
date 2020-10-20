@@ -8,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class EntrepriseComponent implements OnInit {
 
   constructor() { }
-
+  
+  entreprieForm = false;
+  logo : string = "./assets/images/logo.jpeg";
   ngOnInit(): void {
+   
+  }
+  clickToShowForm1(){
+    this.entreprieForm = true;
+    console.log('1')
+  }
+  clickToShowForm2(){
+    this.entreprieForm = false;
+    console.log('2');
   }
 
 }

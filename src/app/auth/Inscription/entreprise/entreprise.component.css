@@ -1,0 +1,263 @@
+.content{
+    height: 100%;
+    background: linear-gradient(rgba(34, 101, 117, 0.3),rgba(34, 101, 117, 0.3)),linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('/assets/images/background.jpeg');
+    
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.icon_bor{
+  width: 130px;
+  height: 130px;
+  margin: 0px auto;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: black;
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+  
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  margin: 0px auto;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  /*border: 15px solid rgba(40, 39, 39, 0.14) ;*/
+  
+}
+
+.logo img{
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+.icon{
+  width: 110px;
+  height: 110px;
+  margin: 0px auto;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  /*border: 15px solid rgba(40, 39, 39, 0.14) ;*/
+  cursor: pointer;
+  outline: none;
+  padding: 1em;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.icon a{
+text-decoration: none;
+}
+
+.button{
+  width: 70px;
+  height: 70px;
+  margin: 0px auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: black;
+  background-color: white;
+  /*border: 12px solid black ;*/
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+
+
+.container{
+  width: 100%;
+  *color: white;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  margin-right: -50%;
+  font-size: 10px;
+  transform: translate(-50%, -50%);
+  
+}
+
+.application{
+  text-align: center;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+  
+   .application .title{
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 0.5;
+  }
+
+  .application .Description{
+    font-size: 20px;
+    text-align: center;
+  }
+  .form1{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .form2 {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: none;
+  }
+
+  #gridCheck{
+    background-color: red;
+   }
+  
+  .form-control {
+    background: none;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    outline: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  ::placeholder {
+    color:white;
+    font-size:13px ;
+    text-align: center;
+  }
+
+   .textLeft{
+    text-align: left;
+    margin-left:  20px;
+    font-size: 13px;
+    color: white;
+  }
+  
+   .textRight{
+    text-align: right;
+    color: white;
+    font-size: 13px;
+  }
+
+  .form input[type = "password"],.form input[type = "email"],.form input[type = "text"]
+  {
+    
+    background: none;
+    outline: none;
+    border: 1px solid white;
+    cursor: pointer;
+    outline: none;
+  }
+
+
+.inscrition {
+  opacity: 0;
+  position: relative;
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: inline-block;
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+
+.content .next{
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  box-shadow: 6px 2px 0 white;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%)
+  
+}
+
+
+
+
+
+.content .next:hover {
+   transition: 0.5s;
+   box-shadow: 10px 10px 0 #226575;
+}
+
+.content .next i:nth-child(2) {
+   transition: 0.5s;
+   margin-right: 0px;
+}
+
+.content .next:hover i:nth-child(2) {
+   transition: 0.5s;
+   margin-right: 45px;
+}
+
+
+
+ .content i:nth-child(2) {
+   width: 20px;
+   margin-left: 30px;
+   position: relative;
+   top: 12%;
+ }
+
+

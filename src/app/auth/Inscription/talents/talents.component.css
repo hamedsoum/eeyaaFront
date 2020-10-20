@@ -140,7 +140,15 @@ text-decoration: none;
     font-size: 20px;
     text-align: center;
   }
-  form{
+  .form1{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .form2 {
     width: 80%;
     justify-content: center;
     align-items: center;
@@ -211,21 +219,20 @@ text-decoration: none;
   height: 50px;
   border: 1px solid #fff;
   border-radius: 50%;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 20px;
   color: white;
-  transition: 1s;
   box-shadow: 6px 2px 0 white;
- 
   position: absolute;
   bottom: 5%;
   left: 50%;
-  margin-right: -50%;
+  
   transform: translate(-50%, -50%)
   
 }
+
+
 
 
 

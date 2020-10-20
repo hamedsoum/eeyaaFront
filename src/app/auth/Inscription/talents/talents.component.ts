@@ -12,8 +12,15 @@ export class TalentsComponent implements OnInit {
   talentInscritionStep2:string  = "2";
   logo : string = "./assets/images/logo.jpeg";
   ngOnInit(): void {
+   
   }
   clickMe(){
-    this.talentInscriptionStep1 = this.talentInscritionStep2;
+    
+      this.talentInscriptionStep1 = this.talentInscritionStep2;
+      console.log(this.talentInscriptionStep1);
+      
+    
+  
   }
+    
 }

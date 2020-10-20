@@ -1,1 +1,89 @@
-<p>entreprise works!</p>
+<div class="content">
+    <div class="icon_bor">
+        <div class="logo">
+            <img  [src]=" logo" alt="" srcset="">
+        </div>
+     </div>
+     <div class="application">
+      <p class="title">Inscription</p>
+      <div class="Description">Cher client,veuillez créatif veuillez sil vous plait renseigner les champs d'Inscription <br/> 
+         NB:Les champs  obligatoires sont indiqué avec un asterix (*)</div>
+    </div>
+     <div class="container  justify-content-center" >
+      <div class="row">
+          <div class="col">
+              <div class="icon_bor" routerLink="pageDacc" >
+                  <div class="logo">
+                      <b>inscription</b>
+                  </div>
+              </div>
+          </div>
+          <div class="col-10">
+            <div class="form-check form-check-inline textLeft">
+                <input (click)=clickToShowForm1() class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Entreprise</label>
+              </div>
+              <div class="form-check form-check-inline textRight">
+                <input (click)=clickToShowForm2() class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Particulier</label>
+              </div>
+            <form class="form1 mt-4" 
+            style="display:block;"
+            *ngIf="entreprieForm == true"
+            [ngClass]="{'animate__animated animate__fadeInDown' : entreprieForm ===true}"
+            >
+            <div class="form-row mt-2 mb-5">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nom complet*">
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email*">
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Mot de passe">
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Confirmation de mot de passe">
+                </div>
+              </div>
+              
+            </form>
+            <form  class="form2 mt-4" 
+             
+             style="display:block;"
+             *ngIf="entreprieForm == false"
+             [ngClass]="{'animate__animated animate__fadeInDown' : entreprieForm ===false}">
+              
+              <div class="form-row mt-2 mb-5">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Pseudo*">
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Date de naissance*">
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Nationnalit*">
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Contact*">
+                </div>
+              </div>
+              
+            </form>
+          </div>
+          <div class="col" >
+              <div class="icon_bor">
+                  <div class="logo">
+                      <a > <b>connexions</b> </a>
+                      
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+      
+  <button  type="button" class="btn btn-default btn-lg next" >
+    <i class="fas fa-arrow-right"></i>
+  </button>   
+  </div>

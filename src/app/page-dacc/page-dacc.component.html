@@ -9,13 +9,13 @@
     <div class="container  justify-content-center" >
         <div class="row">
             <div class="col" (click) = togleDisplay()>
-                <div routerLink="inscription/talents"  [ngClass]="{'entreprise' : isDisplay, 'reviens' : !isDisplay}"><b>Entreprise</b></div>
+                <div routerLink="inscription/talents" class="entre"  [ngClass]="{'entreprise' : isDisplay, 'reviens' : !isDisplay}"><b>Talents</b></div>
                 <div class="icon_bor" >
                     <div class="logo">
                          <b>Inscription</b>
                     </div>
                 </div>
-                <div routerLink="inscription/entreprise" [ngClass]="{'talents' : isDisplay, 'reviens' : !isDisplay}" ><b>talents</b></div>
+                <div routerLink="inscription/entreprise" class="tals" [ngClass]="{'talents' : isDisplay, 'reviens' : !isDisplay}" ><b>Entreprise</b></div>
             </div>
             <div class="col-10">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

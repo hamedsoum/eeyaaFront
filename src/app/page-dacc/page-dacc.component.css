@@ -197,7 +197,7 @@
     display: flex;
     align-items: center;
     transition: 1.2s all ease;
-    transform: translate(71px,-71px) rotate(360deg);
+    transform: translate(69px,-69px) rotate(360deg);
     z-index: 9;
   }
   .talents{
@@ -214,8 +214,13 @@
     display: flex;
     align-items: center;
     transition: 1.2s all ease;
-    transform: translate(63px,73px) rotate(360deg);
+    transform: translate(60px,70px) rotate(360deg);
     z-index: 9;
+  }
+
+  .entre, .tals{
+    border-radius: 50%;
+    
   }
   .talents:hover{
     background-color: #226575;
