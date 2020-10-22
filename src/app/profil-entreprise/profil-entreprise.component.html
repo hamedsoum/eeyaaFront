@@ -1,0 +1,168 @@
+<div class="profilContent bg-light ">
+
+    <div class="container-fluid  ">
+        
+        <div class="row ">
+
+              <div class="col-sm-1 col ">
+                <div class="colgauche bg-white ">
+                        
+                </div>
+              </div>
+
+              <div class="col-sm-8 col">
+                 <div class="colMilieu">
+                    <form>
+                        <input  type="text" class="rechercher mb-5 bg-white" placeholder="Rechercher">
+                        <div class="row">
+                          <div class="col">
+                            <label for="piece"><b>Modifier la pièce</b></label>
+                            <div class="custom-file">
+                                <input type="file"  id="piece" required>
+                                <label class="custom-file-label" for="piece">Modifier</label>
+                                
+                              </div>
+                          </div>
+                          <div class="col">
+                            <label for="photo"><b>Modifier logo/photo</b></label>
+                            <div class="custom-file">
+                                <input type="file"  id="photo" required>
+                                <label class="custom-file-label" for="photo">Modifier</label>
+                                
+                              </div>
+                          </div>
+                          <div class="col">
+                            <label for="Enregistrer">*</label>
+                            <input type="submit" class="form-control" value="Enregistrer">
+                          </div>
+                        </div>
+                    </form>
+                    <div class="quickAccess mt-5 mb-3">
+                            <h6 class="mb-2">Quick Access</h6>
+                            <div class="">
+                                <div class="row d-flex justify-content-center">
+                                    <div *ngFor="let image of quickAccessImages" class="col ">
+                                        <div class="QuickAccesImg">
+                                        <img  [src]=" image.url" alt="" srcset="">
+                                        </div>
+                                        <p >{{image.name}}</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="myFile">
+                          <h6 class="">Mes Fichiers</h6>
+                          <div class="card" style="width: 100%; height: 60px;">
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item ">Cras justo odio</li>
+                              <li class="list-group-item">Dapibus ac facilisis in</li>
+                              <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                          </div>
+                      </div>
+                      
+                </div>
+              </div>
+              <div class="col-sm-3 bg-white col">
+                <div class="profil d-flex flex-row">
+                      <div class="ProfilImage">
+                        <img  [src]="profilImage" alt="" srcset="">
+                      </div>
+                      <div class="profilInfo">
+                        <h6>Nom complet</h6>
+                        
+                        <p>speudo</p>
+                      </div>
+                </div>
+
+                <div class="amis mt-4 d-flex flex-row">
+                   <div class="followers">
+                     <span class="followersNumbers">316</span>
+                     <p >FOLLOWERS</p>
+                   </div>
+                   <div class="following">
+                    <span class="followingNumbers">316</span>
+                    <p >FOLLOWERS</p>
+                   </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+      
+
+       
+
+         
+            
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+                          <!--<div class="quickAccess mt-5">
+                                  <h6 class="mb-3">Quick Access</h6>
+                                  <div class="container">
+                                      <div class="row d-flex justify-content-center">
+                                          <div *ngFor="let image of quickAccessImages" class="col ">
+                                              <div class="QuickAccesImg">
+                                              <img  [src]=" image.url" alt="" srcset="">
+                                              </div>
+                                              
+                                          </div>
+                                      </div>
+                                  </div>
+                            </div>-->
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  

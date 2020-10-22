@@ -29,6 +29,44 @@
   
 }
 
+.buttonInscriptionEntrepriseBorder{
+  width: 130px;
+  height: 130px;
+  margin: 0px auto;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: black;
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+    outline: none;
+}
+
+.buttonInscriptionEntrepriseBorder:hover{
+  background-color: white;
+  border: none;
+  transition: 1s;
+}
+
+.buttonInscriptionEntrepriseBorder:hover .logo{
+  width: 80px;
+  height: 80px;
+  background-color: #226575;
+  border: none;
+  transition: 0.5s;
+  color: white;
+}
+
+
+
 .logo{
   width: 100px;
   height: 100px;
@@ -227,37 +265,22 @@ text-decoration: none;
   position: absolute;
   bottom: 5%;
   left: 50%;
-  
+  transition: 0.5s;
   transform: translate(-50%, -50%)
   
 }
 
 
-
-
-
 .content .next:hover {
-   transition: 0.5s;
-   box-shadow: 10px 10px 0 #226575;
-}
-
-.content .next i:nth-child(2) {
-   transition: 0.5s;
-   margin-right: 0px;
-}
-
-.content .next:hover i:nth-child(2) {
-   transition: 0.5s;
-   margin-right: 45px;
+  color: #226575;
+  border: 1px solid  #226575;
+  box-shadow: 8px 4px 0 #226575;
+  width: 70px;
+  height: 70px;
+  transition: 0.5s;
+  font-size: 30px;
 }
 
 
-
- .content i:nth-child(2) {
-   width: 20px;
-   margin-left: 30px;
-   position: relative;
-   top: 12%;
- }
 
 

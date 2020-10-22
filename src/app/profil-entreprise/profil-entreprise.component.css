@@ -1,0 +1,159 @@
+h1,h2,h3,h4,h5,h6{
+    font-size: 1.3em;
+}
+
+.profilContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-fluid {
+    width: 100%;
+    height: 95%;
+   
+}
+.row{
+    height: 100%;
+}
+.col{
+    height: 100%;   
+}
+
+.col-s-1{
+    margin: 0px;
+}
+.col-s-2{
+    
+    border-radius:  10px 0 0 10px ;
+}
+.col-sm-3{
+    padding: 0px;
+}
+
+.colum3{
+    display: flex;
+   
+    justify-content: left;
+}
+.colgauche{
+    width: 70%;
+    height: 100%;
+    padding: 0px;
+    border-radius: 0 10px 10px 0;
+    
+}
+
+
+.colMilieu{
+    height: 100%;
+    width: 95%;
+   
+    
+    
+    border-radius: 1%;
+
+}
+
+.rechercher{
+    width: 100%;
+    height: 57px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+ .rechercher::placeholder {
+    color: black;
+    font-size: 1.3em;
+  }
+  input[type=submit]{
+      background-color:  #226575;
+      color: white;
+  }
+
+  ::after{
+      display: none;
+  }
+
+  .quickAccess{
+      width: 100%;
+    margin:auto 0px ;
+  }
+
+  .QuickAccesImg{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .QuickAccesImg img{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+  }
+  .profil{
+      display: wrap;
+  }
+
+  .ProfilImage{
+    width: 100px;
+   height: 110px;
+   margin: 2px;
+  }
+
+  .ProfilImage img{
+    height: 110px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;;
+  }
+  .profilInfo{
+      
+      margin: auto 2px ;
+  }
+
+  .amis{
+      height: 80px;
+      margin: 7px;
+     border-top: 1px solid rgba(0, 0, 0, 0.1) ;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+     display: wrap;
+  }
+  .followers, .following{
+      width: 50%;
+      margin: auto auto ;
+      text-align: center;
+      
+  }
+  .followers{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .followers p{
+    line-height: 0.5;
+  font-size: x-small;
+  
+  }
+
+  .following p{
+    line-height: 0.5;
+    font-size: x-small;
+  }
+
+  li {
+      padding: 5px 5px !important;
+  }
+
+  li:hover{
+      background-color: gray;
+  }
+  
+

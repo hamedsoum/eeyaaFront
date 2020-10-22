@@ -10,6 +10,7 @@ import { ConnexionComponent } from './auth/connexion/connexion.component';
 import { EntrepriseComponent } from './auth/Inscription/entreprise/entreprise.component';
 import { TalentsComponent } from './auth/Inscription/talents/talents.component';
 import { PresentationComponent } from './presentation/presentation.component';
+import { ProfilEntrepriseComponent } from './profil-entreprise/profil-entreprise.component';
 
 
 const appRoutes : Routes =[
@@ -18,6 +19,7 @@ const appRoutes : Routes =[
   {path:'inscription/entreprise', component: EntrepriseComponent},
   {path: 'inscription/talents', component: TalentsComponent},
   {path: 'presentation', component: PresentationComponent},
+  {path: 'profil_entreprise', component: ProfilEntrepriseComponent},
   {path:'', component: PageDaccComponent}
 ]
 
@@ -28,7 +30,8 @@ const appRoutes : Routes =[
     ConnexionComponent,
     EntrepriseComponent,
     TalentsComponent,
-    PresentationComponent
+    PresentationComponent,
+    ProfilEntrepriseComponent
    
     
   ],

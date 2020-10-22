@@ -5,7 +5,13 @@
             TYPE PROJET
         </span>
         <div class="text">
-            <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            
+            <p class="para1" 
+            *ngIf="shouldShow"
+            [ngClass]="{'animate__animated animate__fadeOutDown animate__delay-0.5s': shouldShow}"
+            
+            >
+              Lorem1 ipsum dolor sit amet, consectetur adipiscing elit,
                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
@@ -13,7 +19,12 @@
                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
                    mollit anim id est laborum
             </p>
-            <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+           <p class="para2" id="2" 
+           *ngIf="!shouldShow"
+           [ngClass]="{'animate__animated animate__fadeOutDown animate__delay-0.5s': !shouldShow}"
+           
+           >  Lorem2 ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                   ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
@@ -21,8 +32,13 @@
                   sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
                   mollit anim id est laborum
            </p>
+
+           
         </div>
         
     </div>
      
+    <button (click)="toggle()"  type="button" class="btn btn-default btn-lg next" >
+        <i class="fas fa-arrow-down"></i>
+      </button>
 </div>
