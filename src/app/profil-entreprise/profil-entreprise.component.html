@@ -4,7 +4,7 @@
         
         <div class="row ">
 
-              <div class="col-sm-1 col ">
+              <div class="col-sm-1  col1 ">
                 
                 <div class="colgauche bg-white ">
                   <div class="logo">
@@ -13,7 +13,7 @@
                   <div class="home">
                     <img  [src]=" home" alt="" srcset="">
                   </div>
-                  <div class="notif">
+                  <div class=" bg-light notif">
                     <img  [src]=" notif" alt="" srcset="">
                   </div>
                   
@@ -22,13 +22,19 @@
 
               <div class="col-sm-8 col">
                  <div class="colMilieu">
+                    <form class="searchFom bg-white mb-4" >
+                      <i class="fas fa-search"></i>
+                      <input  type="text" class="rechercher bg-white" placeholder="Rechercher">
+                      <div class="croix  bg-light">
+                        <i class="fas fa-times"></i>
+                      </div>
+                    </form>
                     <form>
-                        <input  type="text" class="rechercher mb-5 bg-white" placeholder="Rechercher">
-                        <div class="row">
+                      <div class="row">
                           <div class="col">
                             <label for="piece"><b>Modifier la pièce</b></label>
                             <div class="custom-file">
-                                <input type="file"  id="piece" required>
+                                <input type="file"   id="piece" required>
                                 <label class="custom-file-label" for="piece">Modifier</label>
                                 
                               </div>
@@ -42,34 +48,46 @@
                               </div>
                           </div>
                           <div class="col">
-                            <label for="Enregistrer">*</label>
-                            <input type="submit" class="form-control" value="Enregistrer">
+                            <label for="Enregistrer" class=" LabelDeEnregistrer">*</label>
+                            <input type="submit" class=" form-control" value="Enregistrer">
                           </div>
                         </div>
                     </form>
                     <div class="quickAccess mt-5 mb-2">
-                            <h6 class="mb-3">Quick Access</h6>
-                            <div class="">
+                            <p class="mb-3"> <b>Quick Access</b> </p>
+                            
                                 <div class="row d-flex justify-content-center">
-                                    <div *ngFor="let image of quickAccessImages" class="col ">
+                                    <div *ngFor="let image of quickAccessImages" class="col AccessBox" >
                                         <div class="QuickAccesImg">
                                         <img  [src]=" image.url" alt="" srcset="">
                                         </div>
-                                        <p >{{image.name}}</p>
-                                        
-                                    </div>
+                                        <p class=" mt-2 quickAccessName" >{{image.name}}</p>
+                                     </div>
                                 </div>
-                            </div>
+                            
                       </div>
 
-                      <div class="myFile" style="">
-                          <h6 class="mb-3">Mes Fichiers</h6>
+                      <div class="myFile" >
+                          <p class="mb-3 mt-4"><b>Mes Fichiers</b></p>
                           <div class="card" style="width: 100%;">
 
                             <ul class="list-group list-group-flush">
-                              <li class="list-group-item "> <img  [src]=" folder" alt="" srcset=""> Documents</li>
-                              <li class="list-group-item"><img  [src]=" folder" alt="" srcset="">Multimedia</li>
-                              <li class="list-group-item"><img  [src]=" folder" alt="" srcset="">Autres</li>
+
+                              <li class="list-group-item ">
+                                <div class="itemsWrappe">
+                                  <img  [src]=" folder" class="mr-2" alt="" srcset=""> Documents
+                                </div> 
+                              </li>
+                              <li  class="list-group-item">
+                                <div class="itemsWrappe item2" >
+                                  <img  [src]=" folder" class="mr-2" alt="" srcset=""> Multimedias
+                                </div>
+                              </li>
+                              <li class="list-group-item">
+                                <div class="itemsWrappe">
+                                  <img  [src]=" folder" class="mr-2" alt="" srcset=""> Documents
+                                </div>
+                              </li>
                             </ul>
                            </div>
                           

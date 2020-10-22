@@ -20,9 +20,11 @@ h1,h2,h3,h4,h5,h6{
     height: 100%;   
 }
 
-.col-s-1{
-    margin: 0px;
+.col1{
+    padding: 0px !important;
+
 }
+
 .col-s-2{
     
     border-radius:  10px 0 0 10px ;
@@ -36,46 +38,97 @@ h1,h2,h3,h4,h5,h6{
    
     justify-content: left;
 }
+
+.searchFom {
+   
+    height:57px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.rechercher{
+    border: none;
+    border-radius: 5px;
+    width: 92%;
+    
+}
+.croix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+ .rechercher::placeholder {
+    color: black;
+    font-size: 1.3em;
+  }
+
+  .custom-file-label {
+    
+    border: 0px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.LabelDeEnregistrer{
+    color: #f8f9fa;
+}
 .colgauche{
-    width: 70%;
+    width: 60%;
     height: 100%;
     padding: 0px;
     border-radius: 0 10px 10px 0;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .colgauche .logo{
-   
-      margin-left: 3px;
-}
-
-.colgauche .home, .colgauche .notif, .colgauche .logo{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
     width: 40px;
+      
+}
+
+.colgauche .home, .colgauche .notif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
 
 }
 
 .colgauche .home{
-    background-color: #226575;;
+    background-color: #226575;
     margin-left: 3px;
+    border-radius: 5px;
 }
 
 .colgauche .notif{
-    background-color: grey;
+    
     border-radius: 50%;
-    height: 50px;
+    
     
 }
 
 .colgauche img{
-    height: 30px;
+    height: 20px;
+    width: 20px;
+    
+    
+  }
+  .colgauche .logo img{
+    height: 27px;
     width: 30px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    
     
   }
 
@@ -89,20 +142,7 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
-.rechercher{
-    width: 100%;
-    height: 57px;
-    border: none;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-}
- .rechercher::placeholder {
-    color: black;
-    font-size: 1.3em;
-  }
+
   input[type=submit]{
       background-color:  #226575;
       color: white;
@@ -118,8 +158,8 @@ h1,h2,h3,h4,h5,h6{
   }
 
   .QuickAccesImg{
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -133,6 +173,19 @@ h1,h2,h3,h4,h5,h6{
     background-attachment: fixed;
     
   }
+
+  .AccessBox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .quickAccessName{
+      font-size: x-small;
+      text-align: center;
+  }
+
 
   .infoEeya{
     height: 20px;
@@ -245,15 +298,42 @@ h1,h2,h3,h4,h5,h6{
     
 }
 
+.card{
+    border: none;
+}
+.itemsWrappe{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
 
+.itemsWrappe:hover{
+    background-color: #e8eff1;
+    border-radius: 5px;
+    color: #226575;
+    
+}
+.item2{
+border-bottom: 1px solid gray;
+border-top: 1px solid gray;
 
-  li {
-      padding: 5px 5px !important;
+}
+
+  ul {
+      padding: 10px 10px !important;
+      
   }
 
-  li:hover{
-      background-color: gray;
-  }
+  .list-group-item {
+    
+     padding: 0rem 0rem  !important; 
+    
+     border: 0px solid rgba(0,0,0,.125) !important; 
+}
+
+  
 
   li img{
       height: 25px;
