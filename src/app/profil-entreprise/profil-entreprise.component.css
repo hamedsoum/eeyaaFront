@@ -41,9 +41,43 @@ h1,h2,h3,h4,h5,h6{
     height: 100%;
     padding: 0px;
     border-radius: 0 10px 10px 0;
+    display: flex;
+}
+
+.colgauche .logo{
+   
+      margin-left: 3px;
+}
+
+.colgauche .home, .colgauche .notif, .colgauche .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+
+}
+
+.colgauche .home{
+    background-color: #226575;;
+    margin-left: 3px;
+}
+
+.colgauche .notif{
+    background-color: grey;
+    border-radius: 50%;
+    height: 50px;
     
 }
 
+.colgauche img{
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+  }
 
 .colMilieu{
     height: 100%;
@@ -99,6 +133,40 @@ h1,h2,h3,h4,h5,h6{
     background-attachment: fixed;
     
   }
+
+  .infoEeya{
+    height: 20px;
+    width: 50%;
+    margin: 7px;
+   border-top: 1px solid rgba(0, 0, 0, 0.1) ;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+   
+}
+.localisation, .condition{
+    width: 50%;
+    text-align: left;
+    
+}
+
+.localisation .localisationIcon, .condition .localisationIcon {
+    height: 30px;
+    width: 30px;
+    border: 1px solid  rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mapLocalisation p{
+    line-height: 0.5;
+  font-size: x-small;
+  
+  }
+  .mapLocalisation span{
+      opacity: 0.6;
+      line-height: 0.5;
+      font-size: x-small;
+  }
   .profil{
       display: wrap;
   }
@@ -148,6 +216,37 @@ h1,h2,h3,h4,h5,h6{
     font-size: x-small;
   }
 
+  .textPersConnecte{
+    width: 50%;
+       
+}
+
+.persConnecte{
+    
+    margin: 7px;
+   margin-left: 10px;
+   display: wrap;
+}
+  .Personne, .connecte{
+    
+    text-align: right;
+    
+}
+
+.connecte{
+    
+    text-align: left;
+    
+}
+
+.textPersConnecte p{
+    font-size: x-small;
+    line-height: 0.5;
+    
+}
+
+
+
   li {
       padding: 5px 5px !important;
   }
@@ -155,5 +254,36 @@ h1,h2,h3,h4,h5,h6{
   li:hover{
       background-color: gray;
   }
+
+  li img{
+      height: 25px;
+      width: 25px;
+  }
+
+  .rempliAfter{
+      height: 350px;
+     
+  }
+
+  .Personne img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;;
+  }
+
+  .suiteConne{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #226575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
   
 
