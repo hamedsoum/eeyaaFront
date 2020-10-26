@@ -12,14 +12,14 @@ export class EntrepriseComponent implements OnInit {
   entreprieForm = false;
   logo : string = "./assets/images/logo.jpeg";
   ngOnInit(): void {
-   
+    this.entreprieForm;
   }
   clickToShowForm1(){
-    this.entreprieForm = true;
+    this.entreprieForm = false;
     console.log('1')
   }
   clickToShowForm2(){
-    this.entreprieForm = false;
+    this.entreprieForm = true;
     console.log('2');
   }
 

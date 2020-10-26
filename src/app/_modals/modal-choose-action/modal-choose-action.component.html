@@ -13,7 +13,7 @@
                 Voir projet en cour
             </div>
           </li>
-          <li class="list-group-item" >
+          <li class="list-group-item" (click)="open(content3)" >
             <div class="itemsWrappe " >
                Voir projets Archives  
             </div>
@@ -119,3 +119,39 @@
  
 </ng-template>
 <!--End Modal voir-->
+
+<!-- START Modal Voir projet archivé-->
+<ng-template #content3 let-modal1>
+  <div class="modal-body ">
+   <div class="modal3">
+    <form>
+      <input type="text" class="form-control modal3Search" id="modal3Search"  placeholder="Recherche">
+    </form>
+    <table class="table table-hover" >
+      <thead>
+          <tr>
+              <th class="column1">Projets</th>
+              <th class="column2">Etat</th> 
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="active" >
+          <td class="column1">Projet de panneau publicitaire</td>
+          <td class="column2">En cours d'éxecution </td>
+          </tr>
+          <tr >
+            <td class="column1">Projet de création de logo</td>
+            <td class="column2">En Attente de devis</td>
+            </tr>
+            <tr >
+              <td class="column1">Projet de creation de flyers</td>
+              <td class="column2">paiement </td>
+              </tr>
+       </tbody>
+  </table>
+   </div>
+  </div>
+  
+</ng-template>
+
+<!--END modal Voir projet archivé-->

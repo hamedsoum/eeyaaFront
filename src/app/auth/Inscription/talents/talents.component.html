@@ -6,7 +6,7 @@
      </div>
      <div class="application">
       <p class="title">Inscription</p>
-      <div class="Description">Chère créatif veuillez s'il vous plait renseigner les champs d'Inscription <br/> 
+      <div class="Description">Chèr talent veuillez s'il vous plait renseigner les champs d'Inscription <br/> 
          NB:Les champs  obligatoires sont indiqué avec un asterix (*)</div>
     </div>
      <div class="container  justify-content-center" >
@@ -73,6 +73,7 @@
   </div>
       
   <button  type="button" class="btn btn-default btn-lg next" (click)=clickMe()>
-    <i class="fas fa-arrow-down"></i>
+    <i  *ngIf="flecheDirection == false" class="fas fa-arrow-down"></i>
+    <i *ngIf="flecheDirection == true" class="fas fa-arrow-right"></i>
   </button>   
   </div>

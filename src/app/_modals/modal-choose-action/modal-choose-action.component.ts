@@ -37,6 +37,10 @@ openXl(content2) {
   this.modalService.open(content2, { size: 'xl', centered: true });
 }
 
+open(content3) {
+  this.modalService.open(content3, {  centered: true });
+}
+
 private getDismissReason(reason: any): string {
   if (reason === ModalDismissReasons.ESC) {
     return 'by pressing ESC';

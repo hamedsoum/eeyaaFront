@@ -62,6 +62,8 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
+  outline: none;
   
 }
 
@@ -267,6 +269,7 @@ text-decoration: none;
   transform: translate(-50%, -50%)
   
 }
+
 
 
 

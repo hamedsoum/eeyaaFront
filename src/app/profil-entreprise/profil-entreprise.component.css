@@ -31,8 +31,8 @@ h1,h2,h3,h4,h5,h6{
 }
 .col-sm-3{
     padding: 0px;
-    border-radius: 0 10px 10px 0;
-    box-shadow: 0 14px 28px rgb(230 230 230), -10px 10px 25px rgba(0,0,0,0.22);
+    border-radius:  10px 0 0 10px;
+      box-shadow: 1px 1px 12px #5554;
 }
 
 .colum3{
@@ -87,11 +87,11 @@ h1,h2,h3,h4,h5,h6{
 .colgauche{
     width: 60%;
     height: 100%;
-    padding: 0px;
+    padding: 15px 0px;
     border-radius: 0 10px 10px 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     box-shadow:   0 14px 28px rgb(230 230 230), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -244,6 +244,7 @@ h1,h2,h3,h4,h5,h6{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;;
+    border-radius: 10px;
   }
   .profilInfo{
       
@@ -320,7 +321,7 @@ h1,h2,h3,h4,h5,h6{
 .itemsWrappe:hover{
     background-color: #e8eff1;
     border-radius: 5px;
-    color: #226575;
+    color: hsl(192, 55%, 30%);
     
 }
 .item2{

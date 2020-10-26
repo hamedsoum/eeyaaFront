@@ -49,9 +49,8 @@ const appRoutes : Routes =[
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent,
-    AddProjetComponent,
-    ModalChooseActionComponent,
+  bootstrap: [AppComponent
+   
   ]
 })
 export class AppModule { }
