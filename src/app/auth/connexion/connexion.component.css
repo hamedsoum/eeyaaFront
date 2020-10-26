@@ -25,7 +25,10 @@
   top: 15%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  outline: none;
+  
   
 }
 .buttonConnexionBorder{
@@ -251,7 +254,6 @@ text-decoration: none;
   font-size: 20px;
   color: white;
   transition: 0.5s;
-  box-shadow: 6px 2px 0 white;
   position: absolute;
   bottom: 5%;
   left: 50%;
@@ -265,7 +267,7 @@ text-decoration: none;
 .content .next:hover {
   color: #226575;
   border: 1px solid  #226575;
-  box-shadow: 8px 4px 0 #226575;
+ 
   width: 70px;
   height: 70px;
   transition: 0.5s;

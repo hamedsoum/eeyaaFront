@@ -1,7 +1,9 @@
+
 <div class="profilContent bg-light ">
+  
 
     <div class="container-fluid  ">
-        
+      
         <div class="row ">
 
               <div class="col-sm-1  col1 ">
@@ -33,7 +35,7 @@
                       <div class="row">
                           <div class="col">
                             <label for="piece"><b>Modifier la pièce</b></label>
-                            <div class="custom-file">
+                            <div class="custom-file FileInput">
                                 <input type="file"   id="piece" required>
                                 <label class="custom-file-label" for="piece">Modifier</label>
                                 
@@ -41,23 +43,25 @@
                           </div>
                           <div class="col">
                             <label for="photo"><b>Modifier logo/photo</b></label>
-                            <div class="custom-file">
+                            <div class="custom-file FileInput">
                                 <input type="file"  id="photo" required>
                                 <label class="custom-file-label" for="photo">Modifier</label>
                                 
                               </div>
                           </div>
-                          <div class="col">
+                          <div routerLink=" " class="col">
                             <label for="Enregistrer" class=" LabelDeEnregistrer">*</label>
-                            <input type="submit" class=" form-control" value="Enregistrer">
+                            <input type="submit" class=" form-control FileInput" value="Enregistrer">
                           </div>
                         </div>
                     </form>
+                    
                     <div class="quickAccess mt-5 mb-2">
                             <p class="mb-3"> <b>Quick Access</b> </p>
                             
+                            <app-modal-choose-action></app-modal-choose-action>
                                 <div class="row d-flex justify-content-center">
-                                    <div *ngFor="let image of quickAccessImages" class="col AccessBox" >
+                                    <div (click)="clickMe()" *ngFor="let image of quickAccessImages" class="col AccessBox" >
                                         <div class="QuickAccesImg">
                                         <img  [src]=" image.url" alt="" srcset="">
                                         </div>
@@ -66,7 +70,7 @@
                                 </div>
                             
                       </div>
-
+                      
                       <div class="myFile" >
                           <p class="mb-3 mt-4"><b>Mes Fichiers</b></p>
                           <div class="card" style="width: 100%;">

@@ -1,0 +1,187 @@
+.modalsActionChoose{
+    position: fixed;
+   top: 32%;
+   width: 300px;
+  text-align: center;
+    left: 15%;
+    z-index: 100;
+    overflow: auto;
+    display:none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 12px #555;
+}
+
+.card{
+    border: none;
+    
+}
+.itemsWrappe{
+    height: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin: 5px;
+    padding-top: 5px;
+    background-color: #e8eff1;
+    border-radius: 5px;
+    color: #226575;
+    transition: all 2s linear;
+    
+}
+
+
+
+
+  ul {
+      padding: 10px 10px !important;
+      
+  }
+
+  .list-group-item {
+    
+     padding: 0rem 0rem  !important; 
+     text-align: center;
+     border: 0px solid rgba(0,0,0,.125) !important; 
+}
+
+.show{
+    display: block;
+    transition: 1s;
+   
+    
+}
+
+/*MODAL1*/
+.modal1{
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.modall .modal1 .div1, .modal1 .div2{
+    height:500px;
+    margin: 20px;
+    
+    
+}
+.modall .modal1 .div1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;  
+   justify-content: space-between;
+}
+.modall .modal1 .div1 .div1Items{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    padding-top: 8px;
+    color: black;
+    box-shadow: 1px 1px 12px  #5551;
+    align-items: center;
+    text-align: center;
+}
+
+.modall .modal1 .div1 .titleAddProjet, .modall .modal1 .div1 .valider{
+    height: 40px;
+    width: 100%;
+    background-color:#226575 ;
+    border-radius: 5px;
+    padding-top: 8px;
+    color: white;
+}
+
+.modall .modal1 .div2
+{
+    width: 60%;  
+    box-shadow: 1px 1px 12px  #5551;
+}
+
+/*END MODAL1*/
+
+
+/*START MODAL2*/
+.modal2{
+    color: black;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+    
+}
+.modal2 .div1, .modal2 .div3{
+    display: flex;
+    flex-direction: column;
+   align-items: center;  
+   justify-content: space-between;
+   
+}
+.modal2 .div1 .divItems, .modal2 .div3 .divItems{
+    height: 60px;
+    box-shadow: 1px 1px 12px #5551;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.modal2 .div1 .divItems .divItemsImg, .modal2 .div3 .divItems .divItemsImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.modal2 .div1 .divItems .divItemsImg img, .modal2 .div3 .divItems .divItemsImg img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-right: 10px;
+
+}
+
+.modal2 .div2{
+    height:500px;
+    margin: 15px;
+}
+
+
+.modal2 .div2{
+    text-align: center;
+}
+
+.modal2 .div2 .titleProjetEncou{
+   margin: 95px 10px 60px;
+}
+
+.modal2 .div2 .projetEncoursDiscri{
+   
+    margin: 0px 10px;
+}
+
+.modal2 .div1, .modal2 .div3
+{
+    height:300px;
+    margin: 20px;
+}
+
+
+.modal2 .div1{
+    width: 28%;
+    
+}
+
+
+ .modal2 .div2
+{
+    width: 44%;  
+    box-shadow: 1px 1px 12px #5551;
+ 
+}
+
+.modal2 .div3{
+    width: 28%; 
+    
+}
+

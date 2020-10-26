@@ -11,6 +11,10 @@ import { EntrepriseComponent } from './auth/Inscription/entreprise/entreprise.co
 import { TalentsComponent } from './auth/Inscription/talents/talents.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ProfilEntrepriseComponent } from './profil-entreprise/profil-entreprise.component';
+import { ModalChooseActionComponent } from './_modals/modal-choose-action/modal-choose-action.component';
+import { AddProjetComponent } from './add-projet/add-projet.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 
 const appRoutes : Routes =[
@@ -24,24 +28,30 @@ const appRoutes : Routes =[
 ]
 
 @NgModule({
-  declarations: [
+  declarations: [ 
     AppComponent,
     PageDaccComponent,
     ConnexionComponent,
     EntrepriseComponent,
     TalentsComponent,
     PresentationComponent,
-    ProfilEntrepriseComponent
-   
-    
+    ProfilEntrepriseComponent,
+    ModalChooseActionComponent,
+    AddProjetComponent
+     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,
+    AddProjetComponent,
+    ModalChooseActionComponent,
+  ]
 })
 export class AppModule { }

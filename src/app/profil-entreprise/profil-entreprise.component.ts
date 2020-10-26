@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalServiceService } from '../modal-service.service';
 
 @Component({
   selector: 'app-profil-entreprise',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilEntrepriseComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService : ModalServiceService  ) { }
     home : string = "./assets/images/profil_Image/44604.png";
     logo : string = "./assets/images/profil_Image/logo.png";
     notif : string = "./assets/images/profil_Image/notif.png";
@@ -20,7 +21,7 @@ export class ProfilEntrepriseComponent implements OnInit {
       },
       {
         url : "./assets/images/profil_Image/project-management (1).png",
-        name: "PROJETS"
+        name: "PROJETS",
       },
       {
         url: "./assets/images/profil_Image/receive-mail.png",
@@ -53,6 +54,12 @@ export class ProfilEntrepriseComponent implements OnInit {
 
       }
     ]
+
+    clickMe(){
+      this.modalService.sendClickEvent();
+    }
+
+    
   ngOnInit(): void {
   }
 

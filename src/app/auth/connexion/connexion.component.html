@@ -1,17 +1,26 @@
 <div class="content">
-  <div class="iconBoder">
+  <div routerLink="/pageDacc" class="iconBoder">
       <div class="logo">
           <img  [src]=" logo" alt="" srcset="">
       </div>
    </div>
    <div class="application">
-    <p class="title">Connexion</p>
+    <p class="title">Connexion  </p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
     <div class="Description">veuillez s'il vous plait renseigner les champs de connexions</div>
   </div>
    <div class="container  justify-content-center" >
     <div class="row">
         <div class="col">
-            <div class="buttonConnexionBorder" routerLink="pageDacc">
+            <div class="buttonConnexionBorder" routerLink="/pageDacc">
                 <div class="logo">
                     <b>Inscription</b>
                 </div>
