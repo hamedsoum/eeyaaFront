@@ -58,7 +58,10 @@
               "src/assets/images/profil_Image/Menu-4-présentationB.png",
               "src/assets/images/profil_Image/Menu-5-paramètresB.png",
               "src/assets/images/profil_Image/gain.jpg",
-              "src/assets/images/profil_Image/cloud.png"
+              "src/assets/images/profil_Image/cloud.png",
+              "src/assets/images/profil_Image/direct-download.png",
+              "src/assets/images/profil_Image/paperclip.png"
+
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",

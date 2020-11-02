@@ -25,6 +25,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ProfilCreatifComponent } from './profil-creatif/profil-creatif.component';
 import { GestionGainComponent } from './gestion-gain/gestion-gain.component';
 import { ModalChooseActionCreatifComponent } from './modal-choose-action-creatif/modal-choose-action-creatif.component';
+import { DebriefCreatifComponent } from './debrief-creatif/debrief-creatif.component';
 
 
 
@@ -62,7 +63,8 @@ const appRoutes : Routes =[
     MenuComponent,
     ProfilCreatifComponent,
     GestionGainComponent,
-    ModalChooseActionCreatifComponent
+    ModalChooseActionCreatifComponent,
+    DebriefCreatifComponent
     
      
   ],
