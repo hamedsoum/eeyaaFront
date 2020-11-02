@@ -1,0 +1,478 @@
+h1,h2,h3,h4,h5,h6{
+    font-size: 1.3em;
+}
+
+.profilContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-fluid {
+    width: 100%;
+    height: 95%;
+   
+}
+.row{
+    height: 100%;
+}
+.col{
+    height: 100%;   
+}
+
+.col1{
+    padding: 0px !important;
+
+}
+
+.col-s-2{
+    
+    border-radius:  10px 0 0 10px ;
+}
+.col-sm-3{
+    padding: 10px;
+    border-radius:  10px 0 0 10px;
+      box-shadow: 1px 1px 12px #5554;
+}
+
+.colum3{
+    display: flex;
+   
+    justify-content: left;
+}
+
+.searchFom {
+    box-shadow: 0 14px 28px rgb(230 230 230), 0 10px 10px rgba(0,0,0,0.22);
+    height:57px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+.rechercher{
+    border: none;
+    border-radius: 5px;
+    width: 92%;
+    
+}
+.croix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+ .rechercher::placeholder {
+    color: black;
+    font-size: 1.3em;
+  }
+  
+  .FileInput{
+    box-shadow:0 14px 28px rgb(230 230 230), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 5;
+  }
+  .custom-file-label {
+    
+    border: 0px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.LabelDeEnregistrer{
+    color: #f8f9fa;
+}
+.colgauche{
+    width: 60%;
+    height: 100%;
+    padding: 15px 0px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:   0 14px 28px rgb(230 230 230), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.colgauche .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+      
+}
+
+.colgauche .home, .colgauche .notif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+
+}
+
+.colgauche .home{
+    background-color: #226575;
+    margin-left: 3px;
+    border-radius: 5px;
+}
+
+.colgauche .notif{
+    
+    border-radius: 50%;
+    
+    
+}
+
+.colgauche img{
+    height: 20px;
+    width: 20px;
+    
+    
+  }
+  .colgauche .logo img{
+    height: 27px;
+    width: 30px;
+    
+    
+  }
+
+.colMilieu{
+    height: 100%;
+    width: 95%;
+   
+    
+    
+    border-radius: 1%;
+
+}
+
+
+  input[type=submit]{
+      background-color:  #226575;
+      color: white;
+  }
+
+  ::after{
+      display: none;
+  }
+
+  .quickAccess{
+      width: 100%;
+    margin:auto 0px ;
+  }
+
+  .QuickAccesImg{
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .QuickAccesImg img{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+  }
+
+  .AccessBox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .quickAccessName{
+      font-size: x-small;
+      text-align: center;
+  }
+
+
+  .infoEeya{
+    height: 20px;
+    width: 50%;
+    margin: 7px;
+   border-top: 1px solid rgba(0, 0, 0, 0.1) ;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+   
+}
+.localisation, .condition{
+    width: 50%;
+    text-align: left;
+    
+}
+
+.localisation .localisationIcon, .condition .localisationIcon {
+    height: 30px;
+    width: 30px;
+    border: 1px solid  rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mapLocalisation p{
+    line-height: 0.5;
+  font-size: x-small;
+  
+  }
+  .mapLocalisation span{
+      opacity: 0.6;
+      line-height: 0.5;
+      font-size: x-small;
+  }
+
+  /*Start timeline*/
+  .timeline{
+      height: 480px;
+      width: 90%;
+      box-shadow: 1px 1px 12px  #5551;
+      margin: auto;
+      border-radius: 5px;
+     
+
+  }
+  .timeline .timelineContent{
+      padding: 20px;
+      width: 60%;
+  }
+  .timeline .timelineImg{
+      width: 40%;
+      height: 480px;
+  }
+  .timeline .timelineContent .timelineContent1 .profileTimelineName p{
+        line-height: 0.2;
+        font-size: 14px;
+        color: #c1c2be;
+        font-weight: bold;
+       
+  }
+  .timeline .timelineContent .timelineContent1 .timelineProfilImg{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid #c1c2be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .timeline .timelineContent .timelineContent1 .timelineProfilImg img{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .timeline .timelineContent .timelineContent1{
+    display: flex;
+    justify-content: space-between;
+  }
+  .timeline .timelineContent .timelineContent1 img{
+    height: 30px;
+    width: 30px;
+  
+  }
+
+  .timelineContent2{
+      height: 80%;
+     
+      width: 100%;
+      padding: 100px 0;
+  }
+  .timelineContent2 h1{
+      font-size: 36px;
+      font-weight: 700;
+  }
+
+
+  .timeline .timelineContent .timelineContent3{
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .timelineContent1 img, .timeline .timelineContent .timelineContent3 img{
+    height: 30px;
+    width: 30px;
+    
+  }
+  
+  .timeline img{
+      height: 480px;
+      width: 100%;
+  }
+  .timeline .timeline1{
+    background: linear-gradient(rgba(34, 101, 117, 0.3),rgba(34, 101, 117, 0.3)),linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2));
+
+  }
+  /*END timeline*/
+
+  /*START part3*/
+  .profil{
+      display: wrap;
+  }
+
+  .ProfilImage{
+    width: 100px;
+   height: 110px;
+   margin: 2px;
+  }
+
+  .ProfilImage img{
+    height: 110px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px  #5551;
+    
+  }
+  .profilInfo{
+      
+      margin: auto 2px ;
+  }
+  .profilInfo p{
+      color: #c1c2be;
+  }
+
+  
+
+  .amis{
+      height: 80px;
+      margin: 7px;
+     border-top: 1px solid rgba(0, 0, 0, 0.1) ;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+     display: wrap;
+  }
+  .followers, .following{
+      width: 50%;
+      margin: auto auto ;
+      text-align: center;
+      
+  }
+  .followers{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .followersNumbers, .followingNumbers{
+      font-size: 26px;
+  }
+  .followers p{
+    line-height: 0.5;
+  font-size: x-small;
+  
+  }
+
+  .following p{
+    line-height: 0.5;
+    font-size: x-small;
+  }
+
+  .textPersConnecte{
+    width: 50%;
+       
+}
+
+.persConnecte{
+    
+    margin: 7px;
+   margin-left: 10px;
+   display: wrap;
+}
+  .Personne, .connecte{
+    
+    text-align: right;
+    
+}
+
+.connecte{
+    
+    text-align: left;
+    
+}
+
+.textPersConnecte p{
+    font-size: x-small;
+    line-height: 0.5;
+    
+}
+
+.card{
+    border: none;
+}
+.itemsWrappe{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.itemsWrappe:hover{
+    background-color: #e8eff1;
+    border-radius: 5px;
+    color: hsl(192, 55%, 30%);
+    
+}
+.item2{
+border-bottom: 1px solid #f8f9fa;
+border-top: 1px solid #f8f9fa;
+
+}
+
+  ul {
+      padding: 10px 10px !important;
+      
+  }
+
+  .list-group-item {
+    
+     padding: 0rem 0rem  !important; 
+    
+     border: 0px solid rgba(0,0,0,.125) !important; 
+}
+
+  
+
+  li img{
+      height: 25px;
+      width: 25px;
+  }
+
+  .rempliAfter{
+      height: 340px;
+     
+  }
+
+  .Personne img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;;
+  }
+
+  .suiteConne{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #226575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  
+

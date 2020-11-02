@@ -1,0 +1,262 @@
+<div class="profilContent bg-light ">
+  
+
+    <div class="container-fluid  ">
+      
+        <div class="row ">
+
+              <div class="col-sm-1  col1 ">
+                <div [ngClass]="{'sideBarshow' : sideBarOpen === true, 'sideBarhide' : sideBarOpen === false}" id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" (click)="closeMENU()"  >&times;</a>
+                    <div class="menutittle">
+                      Menu
+                    </div>
+                  <div class="menuItems ">
+                    <div class="menuItem">
+                      <img [src]="menu1" alt="" srcset="">
+                      <p class="mt-5">Profil</p>
+                    </div>
+                    <div class="menuItem">
+                      <img [src]="menu2" alt="" srcset="">
+                      <p class="mt-5">Timeline</p>
+                    </div>
+                    <div class="menuItem">
+                      <img [src]="menu3" alt="" srcset="">
+                      <p class="mt-5">Formation</p>
+                    </div>
+                    <div class="menuItem">
+                      <img [src]="menu4" alt="" srcset="">
+                      <p class="mt-5">Presentation</p>
+                    </div>
+                    <div class="menuItem">
+                      <img [src]="menu5" alt="" srcset="">
+                      <p class="mt-5">Paramètre</p>
+                    </div>
+                  
+                    
+                    
+                  </div>
+                  
+                </div>
+                <div class="colgauche bg-white ">
+                  <div class="logo">
+                    <img  [src]=" logo" alt="" srcset="">
+                  </div>
+                  <div  class="home">
+                    <img (click)="openMENU()" [src]=" home" alt="" srcset="">
+                  </div>
+                  <div class=" bg-light notif">
+                    <img  [src]=" notif" alt="" srcset="">
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="col-sm-8 col">
+                 <div class="colMilieu">
+                    <form class="searchFom bg-white mb-4" >
+                      <i class="fas fa-search mr-3"></i>
+                      <input  type="text" class="rechercher bg-white" placeholder="Rechercher">
+                      <div class="croix  bg-light">
+                        <i class="fas fa-times"></i>
+                      </div>
+                      <div class="textAvantagePremium ml-3 ">
+                          <b>{{premiumText}}</b> 
+                      </div>
+                      <button [ngClass]="{'premium': premium === true}" class="buttonPremium" (click) ="mooveToPremium()"> <b>{{premiumbuttonText}}</b> </button>
+                    </form>
+                    <form>
+                      <div class="row">
+                          <div class="col">
+                            <label for="piece"><b>Modifier la pièce</b></label>
+                            <div class="custom-file FileInput">
+                                <input type="file"   id="piece" required>
+                                <label class="custom-file-label" for="piece">Modifier</label>
+                                
+                              </div>
+                          </div>
+                          <div class="col">
+                            <label for="photo"><b>Modifier logo/photo</b></label>
+                            <div class="custom-file FileInput">
+                                <input type="file"  id="photo" required>
+                                <label class="custom-file-label" for="photo">Modifier</label>
+                                
+                              </div>
+                          </div>
+                          <div routerLink=" " class="col">
+                            <label for="Enregistrer" class=" LabelDeEnregistrer">*</label>
+                            <input type="submit" class=" form-control FileInput" value="Enregistrer">
+                          </div>
+                        </div>
+                    </form>
+                    
+                    <div class="quickAccess mt-5 mb-2">
+                            <p class="mb-3"> <b>Quick Access</b> </p>
+                            
+                            <div class="row d-flex justify-content-center">
+                              <app-modal-choose-action-creatif></app-modal-choose-action-creatif>
+                                    <div (click)="clickMe()" *ngFor="let image of quickAccessImages" class="col AccessBox" >
+                                        <div class="QuickAccesImg">
+                                        <img  [src]=" image.url" alt="" srcset="">
+                                        </div>
+                                        <p class=" mt-2 quickAccessName" >{{image.name}}</p>
+                                     </div>
+                                </div>
+                            
+                      </div>
+                      
+                      <div class="myFile" >
+                          <p class="mb-3 mt-4"><b>Mes Fichiers</b></p>
+                          <div class="card" style="width: 100%;">
+
+                            <ul class="list-group list-group-flush">
+
+                              <li class="list-group-item ">
+                                <div class="itemsWrappe">
+                                  <img  [src]=" folder" class="mr-2" alt="" srcset=""> Documents
+                                </div> 
+                              </li>
+                              <li  class="list-group-item">
+                                <div class="itemsWrappe item2" >
+                                  <img  [src]=" folder" class="mr-2" alt="" srcset=""> Multimedias
+                                </div>
+                              </li>
+                              <li class="list-group-item">
+                                <div class="itemsWrappe">
+                                  <img  [src]=" folder" class="mr-2" alt="" srcset=""> Documents
+                                </div>
+                              </li>
+                            </ul>
+                           </div>
+                          
+                      </div>
+                     <div class="infoEeyaa mt-4 d-flex flex-row">
+                       <div class="localisation d-flex flex-row">
+                          <div class="localisationIcon">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </div>
+                          <div class="mapLocalisation  ml-2">
+                            <span>LOCALISATION</span> 
+                            <p>Abidjan, Cocody palmeraire Cote d'ivoire</p>
+                          </div>
+                         
+                        </div>
+                        <div class="condition d-flex flex-row">
+                          <div class="localisationIcon">
+                            <i class="fas fa-question"></i>
+                          </div>
+                          <div class="mapLocalisation  ml-2">
+                            <span>CONDITION D'ITULISATION</span> 
+                            <p>ciquez pour plus d'info</p>
+                          </div>
+                         
+                        </div>
+                       
+                     </div>
+                </div>
+              </div>
+              <div class="col-sm-3 bg-white col">
+                <div class="profil d-flex flex-row">
+                      <div class="ProfilImage mr-2">
+                        <img  [src]="profilImage" alt="" srcset="">
+                      </div>
+                      <div class="profilInfo">
+                        <h6>Nom complet</h6>
+                        
+                        <p>speudo</p>
+                      </div>
+                </div>
+
+                <div class="amis mt-4 d-flex flex-row">
+                   <div class="followers">
+                     <span class="followersNumbers">316</span>
+                     <p >FOLLOWERS</p>
+                   </div>
+                   <div class="following">
+                    <span class="followingNumbers">316</span>
+                    <p >FOLLOWERS</p>
+                   </div>
+                </div>
+                <div class="rempliAfter">
+                
+                </div>
+                <div class=" d-flex flex-row persConnecte">
+                  <div class="textPersConnecte">
+                    <span class="connecte">connecte</span>
+                    <p >8 contacts</p>
+                  </div>
+                  <div class="nombreConnecte d-flex flex-row">
+                    <div *ngFor="let personne of personneConnecte" class=" d-flex flex-row Personne">
+                      <img [src]="personne.url" alt="" srcset="">
+                     </div>
+                     <div class="suiteConne">
+                          4+
+                     </div>
+                  </div>
+                </div>
+             </div>
+            </div>
+        
+
+      
+
+       
+
+         
+            
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+                         
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  

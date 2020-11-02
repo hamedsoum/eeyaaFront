@@ -15,15 +15,30 @@ import { ModalChooseActionComponent } from './_modals/modal-choose-action/modal-
 import { AddProjetComponent } from './add-projet/add-projet.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { DebriefComponent } from './etatsDeProjet/debrief/debrief.component';
+import { DebriefCarouseComponent } from './debrief-carouse/debrief-carouse.component';
+import { ProfilEntrepriseTimelineComponent } from './profil-entreprise-timeline/profil-entreprise-timeline.component';
+import { ModalProjetArciveComponent } from './modal-projet-arcive/modal-projet-arcive.component';
+import { PreselectionComponent } from './etatsDeProjet/preselection/preselection.component';
+import { EvaluationComponent } from './etatsDeProjet/evaluation/evaluation.component';
+import { MenuComponent } from './menu/menu.component';
+import { ProfilCreatifComponent } from './profil-creatif/profil-creatif.component';
+import { GestionGainComponent } from './gestion-gain/gestion-gain.component';
+import { ModalChooseActionCreatifComponent } from './modal-choose-action-creatif/modal-choose-action-creatif.component';
+
 
 
 const appRoutes : Routes =[
+  {path : 'debrief', component: DebriefComponent},
   {path :'pageDacc', component:PageDaccComponent },
   {path: 'connexion', component:ConnexionComponent},
   {path:'inscription/entreprise', component: EntrepriseComponent},
   {path: 'inscription/talents', component: TalentsComponent},
   {path: 'presentation', component: PresentationComponent},
   {path: 'profil_entreprise', component: ProfilEntrepriseComponent},
+  {path: 'profilCreatif', component: ProfilCreatifComponent},
+  {path: 'gestionGain', component: GestionGainComponent },
+  {path: 'entrepriseTimeline', component: ProfilEntrepriseTimelineComponent},
   {path:'', component: PageDaccComponent}
 ]
 
@@ -37,7 +52,18 @@ const appRoutes : Routes =[
     PresentationComponent,
     ProfilEntrepriseComponent,
     ModalChooseActionComponent,
-    AddProjetComponent
+    AddProjetComponent,
+    DebriefComponent,
+    DebriefCarouseComponent,
+    ProfilEntrepriseTimelineComponent,
+    ModalProjetArciveComponent,
+    PreselectionComponent,
+    EvaluationComponent,
+    MenuComponent,
+    ProfilCreatifComponent,
+    GestionGainComponent,
+    ModalChooseActionCreatifComponent
+    
      
   ],
   imports: [
@@ -49,8 +75,6 @@ const appRoutes : Routes =[
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent
-   
-  ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

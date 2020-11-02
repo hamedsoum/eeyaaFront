@@ -9,7 +9,6 @@ import { ModalServiceService } from '../modal-service.service';
 })
 export class AddProjetComponent implements OnInit {
   clickEventsubscription:Subscription;
-  valider : string = "./assets/images/profil_Image/valider.png";
   constructor(private modalService:ModalServiceService) { 
     this.clickEventsubscription=this.modalService.getClickEvent().subscribe(()=>{
       this.incrementCount();

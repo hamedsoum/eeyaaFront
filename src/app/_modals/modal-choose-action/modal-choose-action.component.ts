@@ -11,18 +11,20 @@ import { ModalServiceService } from 'src/app/modal-service.service';
 export class ModalChooseActionComponent implements OnInit {
   clickEventsubscription:Subscription;
   valider : string = "./assets/images/profil_Image/valider.png";
+  attente : string = "./assets/images/profil_Image/attente.png";
+
 
   closeResult : string;
   constructor(private modaleService: ModalServiceService, private modalService: NgbModal) { 
     this.clickEventsubscription=this.modaleService.getClickEvent().subscribe(()=>{
-      this.incrementCount();
+      this.showHide();
       })
   }
   ngOnInit(): void {
   }
   show:boolean = true;
 
-incrementCount(){
+showHide(){
 this.show = !this.show;
 }
 
@@ -36,9 +38,13 @@ openlg(content) {
 openXl(content2) {
   this.modalService.open(content2, { size: 'xl', centered: true });
 }
+openXl1(content4) {
+  this.modalService.open(content4, { size: 'xl', centered: true });
+}
+
 
 open(content3) {
-  this.modalService.open(content3, {  centered: true });
+  this.modalService.open(content3, {  centered: true,size: 'xl' });
 }
 
 private getDismissReason(reason: any): string {

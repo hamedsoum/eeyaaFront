@@ -1,0 +1,476 @@
+<div  [ngClass]="{'show': !show}" #choose class="modalsActionChoose bg-white">
+    <div class="card" style="width: 100%;">
+
+        <ul class="list-group list-group-flush">
+
+          <li class="list-group-item "(click)="openlg(content)">
+            <div class="itemsWrappe">
+             Voir projet en cour
+            </div> 
+          </li>
+          <li  class="list-group-item" (click)="openXl(content3)">
+            <div class="itemsWrappe item2" >
+                Voir projet Archivé
+            </div>
+          </li>
+          <li class="list-group-item" >
+            <div class="itemsWrappe " >
+                <app-gestion-gain></app-gestion-gain> 
+            </div>
+           
+          </li>
+        </ul>
+       </div>
+</div>
+
+<ng-template #content let-modal1>
+  <div class="modal-body modall">
+   <div class="modal1">
+     <div class="div1">
+       <div class="titleAddProjet text-center">
+           <p>Ajouter projet</p>
+       </div>
+       <div class="div1Items">
+        <b>Catégorie</b>
+      </div>
+      <div class="div1Items Description">
+        <b>Description</b>
+      </div>
+      <div class="div1Items">
+        <b>Type</b>
+      </div>
+      <div class="div1Items">
+        <b>Niveau</b>
+      </div>
+      <div class="div1Items">
+        <b>Prix</b>
+      </div>
+      <div class="div1Items">
+        <b>Ajouter</b>
+      </div>
+<div class="div1Items valider">
+        Valider
+      </div>
+     </div>
+     <div class="div2"></div>
+   </div>
+  </div>
+  
+</ng-template>
+
+<!--Modale Voir projet en cours-->
+<ng-template  #content2 let-modal>
+  
+  <div class="modal-body">
+    <div class="modal2">
+      <div class="div1">
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+         <b> Attente de devis</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+          <b>Paiement</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+        <b> En cours d'execution</b>
+        </div>
+      </div>
+      <div class="div2">
+        <h2 class="titleProjetEncou " >
+          Projet de panneau publicitaire
+        </h2>
+        <div class="projetEncoursDiscri ">
+          Lorem1 ipsum dolor sit amet, consectetur adipiscing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                   ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                   
+        </div>
+      </div>
+      <div class="div3">
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+          <b>En cours d'évaluation</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+         <b>Préselection</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+          <b>Débriefs</b>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</ng-template>
+<!--End Modal voir-->
+
+<!-- START Modal Voir projet archivé-->
+<ng-template #content3 let-modal1>
+  <div class="modal-body ">
+   <div class="modal3">
+    <form>
+      <input type="text" class="form-control modal3Search" id="modal3Search"  placeholder="Recherche">
+    </form>
+    <table class="table table-hover" >
+      <thead>
+          <tr>
+              <th class="column1">Projets</th>
+              <th class="column2">Etat</th> 
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="active"  >
+          <td class="column1">Projet de panneau publicitaire</td>
+          <td class="column2">Gagnant </td>
+          </tr>
+          <tr   >
+            <td class="column1">Projet de création de logo</td>
+            <td class="column2">Pré-selectionné</td>
+            </tr>
+            <tr  >
+              <td class="column1">Projet de creation de flyers</td>
+              <td class="column2">En competition</td>
+            </tr>
+            <tr  >
+              <td class="column1">Projet d'illustration</td>
+              <td class="column2">Elimié</td>
+            </tr>
+            <tr  >
+              <td><app-debrief></app-debrief></td>
+              <td class="column2">En attente de décision </td>
+            </tr>
+            <tr  >
+              <td>projet de Vidéo 3D</td>
+              <td class="column2">Eliminé </td>
+            </tr>
+            
+       </tbody>
+  </table>
+   </div>
+  </div>
+  
+</ng-template>
+
+<!--END modal Voir projet archivé-->
+
+<ng-template  #content4 let-modal>
+  
+  <div class="modal-body">
+    <div class="modal2">
+      <div class="div1">
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+         <b> Attente de devis</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+           
+          </div>
+          <b>Paiement</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+           
+          </div>
+        <b> En cours d'execution</b>
+        </div>
+      </div>
+      <div class="div2">
+        <h2 class="titleProjetEncou " >
+          Projet de creation de logo
+        </h2>
+        <div class="projetEncoursDiscri ">
+          Lorem1 ipsum dolor sit amet, consectetur adipiscing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                   ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                   
+        </div>
+      </div>
+      <div class="div3">
+        <div class="divItems">
+          <div class="divItemsImg">
+           
+          </div>
+          <b>En cours d'évaluation</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+         <b>Préselection</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+          <b>Débriefs</b>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</ng-template>
+
+<ng-template  #content5 let-modal>
+  
+  <div class="modal-body">
+    <div class="modal2">
+      <div class="div1">
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+         <b> Attente de devis</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="attente" alt="" srcset="">
+          </div>
+          <b>Paiement</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+        <b> En cours d'execution</b>
+        </div>
+      </div>
+      <div class="div2">
+        <h2 class="titleProjetEncou " >
+          Projet de creation de flyer
+        </h2>
+        <div class="projetEncoursDiscri ">
+          Lorem1 ipsum dolor sit amet, consectetur adipiscing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                   ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                   
+        </div>
+      </div>
+      <div class="div3">
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+          <b>En cours d'évaluation</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+         <b>Préselection</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+          <b>Débriefs</b>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</ng-template>
+
+<ng-template  #content6 let-modal>
+  
+  <div class="modal-body">
+    <div class="modal2">
+      <div class="div1">
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+         <b> Attente de devis</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+          <b>Paiement</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+        <b> En cours d'execution</b>
+        </div>
+      </div>
+      <div class="div2">
+        <h2 class="titleProjetEncou " >
+          Projet de creation de flyer
+        </h2>
+        <div class="projetEncoursDiscri ">
+          Lorem1 ipsum dolor sit amet, consectetur adipiscing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                   ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                   
+        </div>
+      </div>
+      <div class="div3">
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="attente" alt="" srcset="">
+          </div>
+          <b>En cours d'évaluation</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+         <b>Préselection</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+          <b>Débriefs</b>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</ng-template>
+
+<ng-template  #content7 let-modal>
+  
+  <div class="modal-body">
+    <div class="modal2">
+      <div class="div1">
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+         <b> Attente de devis</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+          <b>Paiement</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="attente" alt="" srcset="">
+          </div>
+        <b> En cours d'execution</b>
+        </div>
+      </div>
+      <div class="div2">
+        <h2 class="titleProjetEncou " >
+          Projet de creation de flyer
+        </h2>
+        <div class="projetEncoursDiscri ">
+          Lorem1 ipsum dolor sit amet, consectetur adipiscing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                   ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                   
+        </div>
+      </div>
+      <div class="div3">
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+          <b>En cours d'évaluation</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+         <b>Préselection</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+          <b>Débriefs</b>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</ng-template>
+
+<ng-template  #content8 let-modal>
+  
+  <div class="modal-body">
+    <div class="modal2">
+      <div class="div1">
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+         <b> Attente de devis</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="valider" alt="" srcset="">
+          </div>
+          <b>Paiement</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            <img [src]="attente" alt="" srcset="">
+          </div>
+        <b> En cours d'execution</b>
+        </div>
+      </div>
+      <div class="div2">
+        <h2 class="titleProjetEncou " >
+          Projet de creation de flyer
+        </h2>
+        <div class="projetEncoursDiscri ">
+          Lorem1 ipsum dolor sit amet, consectetur adipiscing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                   ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                   
+        </div>
+      </div>
+      <div class="div3">
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+          <b>En cours d'évaluation</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+         <b>Préselection</b>
+        </div>
+        <div class="divItems">
+          <div class="divItemsImg">
+            
+          </div>
+          <b>Débriefs</b>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</ng-template>

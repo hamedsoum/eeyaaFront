@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5,h6{
     border-radius:  10px 0 0 10px ;
 }
 .col-sm-3{
-    padding: 0px;
+    padding: 10px;
     border-radius:  10px 0 0 10px;
       box-shadow: 1px 1px 12px #5554;
 }
@@ -250,6 +250,9 @@ h1,h2,h3,h4,h5,h6{
       
       margin: auto 2px ;
   }
+  .profilInfo p{
+    color: #c1c2be;
+}
 
   .amis{
       height: 80px;
@@ -277,6 +280,10 @@ h1,h2,h3,h4,h5,h6{
     line-height: 0.5;
     font-size: x-small;
   }
+
+  .followersNumbers, .followingNumbers{
+    font-size: 26px;
+}
 
   .textPersConnecte{
     width: 50%;
@@ -350,7 +357,7 @@ border-top: 1px solid #f8f9fa;
   }
 
   .rempliAfter{
-      height: 350px;
+    height: 340px;
      
   }
 
@@ -375,4 +382,83 @@ border-top: 1px solid #f8f9fa;
   }
 
   
+  /*STAR MENU*/
+
+  
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+   
+  }
+  
+  .sidenav .menutittle{
+    height: 20%;
+    font-size: 85px ;
+    padding-top: 30px;
+    padding-left: 120px;
+  
+    color: white;
+  }
+  .sidenav .menuItems{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    width: 90%;
+    color: rgba(0, 0, 0, 0.1);
+   }
+   .sidenav .menuItems .menuItem p{
+     text-align:center ;
+     color: white;
+     font-size: 30px;
+   }
+  
+  .sideBarshow{
+    
+    width: 100%;
+   }
+  
+  .sideBarhide{
+    width: 0;
+  }
+  
+  .sidenav img{
+    height: 130px;
+    width: 130px;
+    transition: 0.2s;
+  }
+  .sidenav img:hover{
+    height: 200px;
+    width: 200px;
+    
+  }
+  
+  
+  
+  .sidenav a{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/*EN MENU*/
 

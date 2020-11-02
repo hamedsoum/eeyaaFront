@@ -6,6 +6,7 @@ import { Observable, Subject } from 'rxjs';
 })
 export class ModalServiceService {
   private subject = new Subject<any>();
+  show: boolean = false;
 
   sendClickEvent() {
     this.subject.next();
@@ -13,6 +14,7 @@ export class ModalServiceService {
 
   getClickEvent(): Observable<any>{ 
     return this.subject.asObservable();
+     
   }
 
   constructor() { }

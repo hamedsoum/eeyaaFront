@@ -1,0 +1,82 @@
+<ng-template #content let-modal1>
+    <div class="modal-body modall">
+     <div class="modal1">
+       <div class="div1">
+           <div class="div1ImageGain mb-5">
+               <img [src]="gain" alt="" srcset="">
+           </div>
+           <div class="divTotal mt-5">
+               <div class="solde">
+                <small>Solde total</small>
+                <p><b>1.500.000 FCFA</b></p>
+               </div>
+               <div class="solde">
+                <small>dernier versement</small>
+                <p><b>1.500.000 FCFA</b></p>
+               </div>
+               <div class="solde">
+                <small>Date du dernier versement</small>
+                <p><b>1.500.000 FCFA</b></p>
+               </div>
+               <div class="solde">
+
+                </div>
+           </div>
+       </div>
+       <div class="div2">
+           <h1>statitiques</h1>
+           <small>Gestion de gains</small>
+           
+           
+            
+              <form  class="mt-3 mb-4">
+                <input type="text" class="form-control modal3Search" id="modal3Search"  placeholder="Recherche">
+              </form>
+              <table class="table table-hover" >
+                <thead>
+                    <tr>
+                        <th class="">Date</th>
+                        <th class="border-right border-left">Montant</th> 
+                        <th class="border-right">Moyen de payement</th>
+                        <th class="">Projet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr  >
+                        <td class="">01.10.2020</td>
+                        <td class="border-right border-left">100.000fr </td>
+                        <td class="border-right">Virement bancaire </td>
+                        <td class="">Projet dd'ffichage pubicitaire</td>
+                    </tr>
+                    <tr   >
+                          <td class="">01.10.2020</td>
+                          <td class="border-right border-left">100.000fr </td>
+                          <td class="border-right">Mtn Money </td>
+                          <td class="">Projet de création de logo</td>
+                          
+                    </tr>
+                    <tr  >
+                        <td class="">01.10.2020</td>
+                        <td class="border-right border-left">100.000fr </td>
+                        <td class="border-right">Moov Money </td>
+                        <td class="">Projet de creation de flyers</td>
+                        
+                    </tr>
+                    <tr  >
+                        <td class="">01.10.2020</td>
+                        <td class="border-right border-left">100.000fr </td>
+                        <td class="border-right">Oorange Money </td>
+                        <td class="">Projet d'illustration</td>
+                    </tr>
+                 </tbody>
+            </table>
+            
+            
+       </div>
+     </div>
+    </div>
+    
+  </ng-template>
+
+  <div (click)="openLg(content)">Gérer mes gains</div>
+

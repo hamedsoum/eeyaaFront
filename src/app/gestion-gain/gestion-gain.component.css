@@ -1,0 +1,84 @@
+.modal1{
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.modall .modal1 .div1, .modal1 .div2{
+    height:500px;
+    margin: 20px;
+    
+    
+}
+.modall .modal1 .div1{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+     
+   
+}
+.modal1 table thead th {
+   
+    color: #a3a3a3;
+    
+}
+.modal1 table tbody  td {
+   
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+h1{
+    line-height: 0.5;
+}
+.modall .modal1 .modal3Search{
+    background-color:#f1f4f8;
+    margin-bottom: 10px;
+}
+
+.modall .modal1 td,.modall .modal1 th {
+    padding: 5px;
+    border: none;
+}
+
+.modall .modal1 td .border, .modall .modal1 th .border{
+  
+}
+.modall .modal1 tbody tr:hover{
+    background-color: #226575 ;
+    color: white;
+    border:none;
+    
+}
+
+.divTotal{
+    height: 65%;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div1ImageGain img{
+    height: 180px;
+    width: 240px;
+    border-radius: 5px;
+}
+.modall .modal1 .div2
+{
+    padding: 20px;
+    width: 65%;  
+    box-shadow: 1px 1px 12px  #5551;
+}
+
+/*Star modal3*/
+.modall .modal1 .div2 .modall .modal1 .div2Search{
+    background-color:#f1f4f8;
+    margin-bottom: 10px;
+}
+
+.modall .modal1 .div2  .div2Search :focus{
+border : none;
+}
+
+

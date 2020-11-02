@@ -1,0 +1,129 @@
+<div (click)="openXl(content2)">Projet de video 3d</div>
+
+<ng-template #content2 let-modal>
+  
+    <div class="modal-body">
+      <div class="modal2">
+        <div class="div1">
+          <div class="divItems">
+            <div class="divItemsImg">
+              <img [src]="valider" alt="" srcset="">
+            </div>
+           <b> Attente de devis</b>
+          </div>
+          <div class="divItems">
+            <div class="divItemsImg">
+              <img [src]="valider" alt="" srcset="">
+            </div>
+            <b>Paiement</b>
+          </div>
+          <div class="divItems">
+            <div class="divItemsImg">
+              <img [src]="valider" alt="" srcset="">
+            </div>
+          <b> En cours d'execution</b>
+          </div>
+        </div>
+        <div class="div2">
+            <div class="part1">
+              <h6 class="nomProjet">projet de video 3D</h6>
+              <h2><b>Préselection</b></h2>
+              <p class="projetDescription">ipsum dolor sit amet, consectetur adipsing elit</p>
+            </div>
+            <div class="part2">
+              <div class="debrief mb-3">
+               <div class="debriefhead">
+               </div>
+               <div class="debriefContent">
+                 <div class="debriefContentTittle">
+                  <b>Crea-0001-ABC-01</b>
+                  <p>team/Solo</p>
+                 </div>
+                 <div class="content">
+                  <img [src]="picture" alt="" srcset="">
+                 
+                 </div>
+                 <div class="DebriefChoix">
+                    <button  (click)="openXl(content1)">Aperçu</button>
+                 </div>
+                </div>
+                
+              </div>
+              <div class="debrief">
+                <div class="debriefhead">
+                </div>
+                <div class="debriefContent">
+                  <div class="debriefContentTittle">
+                   <b>Crea-0001-ABC-01</b>
+                   <p>team/Solo</p>
+                  </div>
+                  <div class="content">
+                   <img [src]="video" alt="" srcset="">
+                  
+                  </div>
+                  <div class="DebriefChoix">
+                     <button (click)="openXl(content1)">Aperçu</button>
+                  </div>
+                 </div>
+              </div>
+              <div class="debrief">
+                <div class="debriefhead">
+                </div>
+                <div class="debriefContent">
+                  <div class="debriefContentTittle">
+                   <b>Crea-0001-ABC-01</b>
+                   <p>team/Solo</p>
+                  </div>
+                  <div class="content">
+                   <img [src]="pdf" alt="" srcset="">
+                  
+                  </div>
+                  <div class="DebriefChoix">
+                     <button (click)="openXl(content1)">Aperçu</button>
+                  </div>
+                 </div>
+              </div>
+          </div> 
+        </div>
+        <div class="div3">
+          <div class="divItems">
+            <div class="divItemsImg">
+              <img [src]="valider" alt="" srcset="">
+            </div>
+            <b>En cours d'évaluation</b>
+          </div>
+          <div class="divItems">
+            <div class="divItemsImg">
+              <img [src]="attente" alt="" srcset="">
+            </div>
+           <b>Préselection</b>
+          </div>
+          <div class="divItems">
+            <div class="divItemsImg">
+              
+            </div>
+            <b>Débriefs</b>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </ng-template>
+
+  <ng-template  #content1 let-modal>
+  
+    <div class="modal-body">
+      <div class="modal1  d-flex flex-row">
+        <div class="debrielApercu">
+          <img [src]="debriefImg" alt="" srcset="">
+        </div>
+        <div class="debriefRetour">
+          <button  (click)="modal.close('Close click')" type="button" class="btn btn-default btn-lg next">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          <p>retour</p>
+        </div>
+      </div>
+    </div>
+   
+  </ng-template>
