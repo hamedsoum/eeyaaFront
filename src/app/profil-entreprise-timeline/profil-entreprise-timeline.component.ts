@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profil-entreprise-timeline.component.css']
 })
 export class ProfilEntrepriseTimelineComponent implements OnInit {
-  home : string = "./assets/images/profil_Image/44604.png";
+  home : string = "./assets/images/profil_Image/44604B.png";
   logo : string = "./assets/images/profil_Image/logo.png";
   notif : string = "./assets/images/profil_Image/notif.png";
   profilImage : string = "./assets/images/profil_Image/team2.jpg";

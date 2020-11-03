@@ -416,6 +416,10 @@ border-top: 1px solid #f8f9fa;
     width: 90%;
     color: rgba(0, 0, 0, 0.1);
    }
+   .sidenav .menuItems .menuItem{
+    cursor: pointer;
+    outline: none;
+   }
    .sidenav .menuItems .menuItem p{
      text-align:center ;
      color: white;

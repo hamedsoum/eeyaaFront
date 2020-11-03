@@ -40,6 +40,7 @@ const appRoutes : Routes =[
   {path: 'profilCreatif', component: ProfilCreatifComponent},
   {path: 'gestionGain', component: GestionGainComponent },
   {path: 'entrepriseTimeline', component: ProfilEntrepriseTimelineComponent},
+  {path: 'menu', component: MenuComponent},
   {path:'', component: PageDaccComponent}
 ]
 

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  home : string = "./assets/images/profil_Image/44604B.png";
   menu1 : string = "./assets/images/profil_Image/Menu-1-profilB.png";
   menu2 : string = "./assets/images/profil_Image/Menu-2-timelineB.png";
   menu3 : string = "./assets/images/profil_Image/Menu-3-formationB.png";

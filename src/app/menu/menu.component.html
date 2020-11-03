@@ -1,8 +1,32 @@
-<div d-flex flex-row  [ngClass]="{'sideBarshow' : sideBarOpen === true, 'sideBarhide' : sideBarOpen === false}" id="mySidenav" class="sidenav">
+<div  class="menuImg">
+    <img (click)="openMENU()" [src]=" home" alt="" srcset="">
+</div>
+
+  <div [ngClass]="{'sideBarshow' : sideBarOpen === true, 'sideBarhide' : sideBarOpen === false}" id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" (click)="closeMENU()"  >&times;</a>
-    <img [src]="menu1" alt="" srcset="">
-    <img [src]="menu2" alt="" srcset="">
-    <img [src]="menu3" alt="" srcset="">
-    <img [src]="menu4" alt="" srcset="">
-    <img [src]="menu5" alt="" srcset="">
+      <div class="menutittle">
+        Menu
+      </div>
+    <div class="menuItems ">
+      <div class="menuItem">
+        <img [src]="menu1" alt="" srcset="">
+        <p class="mt-5">Profil</p>
+      </div>
+      <div  class="menuItem">
+        <app-menu></app-menu>
+        <p class="mt-5">Timeline</p>
+      </div>
+      <div class="menuItem">
+        <img [src]="menu3" alt="" srcset="">
+        <p class="mt-5">Formation</p>
+      </div>
+      <div class="menuItem">
+        <img [src]="menu4" alt="" srcset="">
+        <p class="mt-5">Presentation</p>
+      </div>
+      <div class="menuItem">
+        <img [src]="menu5" alt="" srcset="">
+        <p class="mt-5">Paramètre</p>
+      </div>
   </div>
+</div>

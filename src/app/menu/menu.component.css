@@ -1,41 +1,69 @@
+ img{
+    height: 230px;
+    width: 200px;
+    
+}
+.menuImg{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+
+
+  
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
-   
     z-index: 1000;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.9);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
-    text-align:center;
+   
+  }
+  
+  .sidenav .menutittle{
+    height: 20%;
+    font-size: 85px ;
+    padding-top: 30px;
+    padding-left: 120px;
+    color: white;
+  }
+  .sidenav .menuItems{
+    height: 80%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
-  }
+    margin-left: 200px;
+    width: 90%;
+    color: rgba(0, 0, 0, 0.1);
+   }
+   .sidenav .menuItems .menuItem p{
+     text-align:center ;
+     color: white;
+     font-size: 30px;
+   }
+  
   .sideBarshow{
     
     width: 100%;
-    margin: auto auto;
-    
-  }
+   }
   
   .sideBarhide{
     width: 0;
   }
   
   .sidenav img{
-    height: 180px;
-    width: 180px;
+    height: 130px;
+    width: 130px;
     transition: 0.2s;
   }
   .sidenav img:hover{
-    height: 220px;
-    width: 220px;
+    height: 200px;
+    width: 200px;
+    
   }
   
   
