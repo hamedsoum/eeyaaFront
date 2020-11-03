@@ -9,7 +9,9 @@
     background-color: red;
 }
 
-
+.para:hover{
+  margin-right: 100px;
+}
   
 .sidenav {
     height: 100%;

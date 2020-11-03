@@ -68,13 +68,13 @@
     display: flex;
     flex-direction: column;
    align-items: center;  
-   justify-content: space-between;
+   justify-content: space-around;
 }
 .modall .modal1 .div1 .div1Items{
-    height: 40px;
+   
     width: 100%;
     border-radius: 5px;
-    padding-top: 8px;
+   
     color: black;
     box-shadow: 1px 1px 12px  #5551;
     align-items: center;
@@ -89,11 +89,39 @@
     padding-top: 8px;
     color: white;
 }
+.valider{
+    cursor: pointer;
+}
 
 .modall .modal1 .div2
 {
     width: 60%;  
     box-shadow: 1px 1px 12px  #5551;
+}
+
+textarea{
+    border: none;
+}
+.addProject::placeholder{
+   font-weight:bold ;
+   align-items: center;
+   color: black;
+   text-align: center;
+}
+input::placeholder{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+select{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+input{
+    border: none;
 }
 
 /*END MODAL1*/

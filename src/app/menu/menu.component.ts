@@ -26,4 +26,5 @@ export class MenuComponent implements OnInit {
     this.sideBarOpen = !this.sideBarOpen;
     console.log(!this.sideBarOpen);
   }
+ 
 }
