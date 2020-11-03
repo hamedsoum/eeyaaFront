@@ -315,6 +315,31 @@ h1,h2,h3,h4,h5,h6{
     background: linear-gradient(rgba(34, 101, 117, 0.3),rgba(34, 101, 117, 0.3)),linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2));
 
   }
+
+   .carousel-control-prev{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 7%;
+    color: black;
+    opacity: 1;
+  }
+  .carousel-control-next{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    right: 27%;
+    color: black;
+    opacity: 1;
+    
+  }
+  
   /*END timeline*/
 
   /*START part3*/
