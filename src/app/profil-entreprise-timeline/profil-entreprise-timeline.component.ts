@@ -18,6 +18,12 @@ export class ProfilEntrepriseTimelineComponent implements OnInit {
   timelineImg3 : string = "./assets/images/profil_Image/3.png";
   timelineImg4 : string = "./assets/images/profil_Image/4.png";
   medal : string = "./assets/images/profil_Image/4.png";
+  sideBarOpen :boolean = false;
+  menu1 : string = "./assets/images/profil_Image/Menu-1-profilB.png";
+  menu2 : string = "./assets/images/profil_Image/Menu-2-timelineB.png";
+  menu3 : string = "./assets/images/profil_Image/Menu-3-formationB.png";
+  menu4 : string = "./assets/images/profil_Image/Menu-4-présentationB.png";
+  menu5 : string = "./assets/images/profil_Image/Menu-5-paramètresB.png";
   personneConnecte = [
     {
       url : "./assets/images/profil_Image/team1.jpg"
@@ -38,6 +44,16 @@ export class ProfilEntrepriseTimelineComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  openMENU(){
+    this.sideBarOpen = !this.sideBarOpen;
+    console.log(!this.sideBarOpen);
+    
+  }
+  closeMENU(){
+    this.sideBarOpen = !this.sideBarOpen;
+    console.log(!this.sideBarOpen);
   }
 
 }

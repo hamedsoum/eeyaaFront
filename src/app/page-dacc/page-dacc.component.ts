@@ -10,7 +10,7 @@ export class PageDaccComponent implements OnInit {
  togleDisplay(){
    
    this.isDisplay = !this.isDisplay;
-   console.log('heyy');
+   
    
  }
   constructor() { }
