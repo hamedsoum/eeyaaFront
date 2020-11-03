@@ -1,0 +1,169 @@
+/*START MODAL2*/
+.modal2{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1000;
+}
+.modal2 .div1{
+    display: flex;
+    flex-direction: column;  
+   justify-content: space-around;
+   
+}
+.modal2 .div1 .divItems{
+    height: 60px;
+    box-shadow: 1px 1px 12px #5554;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+
+
+
+.modal2 .div1 .divItems .divItemsImg, .modal2 .div3 .divItems .divItemsImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;;
+    border: 1px solid #e5e5e5;
+    margin-right: 10px;
+}
+.modal2 .div1 .divItems .divItemsImg img, .modal2 .div3 .divItems .divItemsImg img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+
+}
+
+.quickAccess{
+  width: 100%;
+  margin:auto 0px ;
+  
+}
+
+.QuickAccesImg{
+  width: 150px;
+  height: 155px;
+  border-radius: 5px;
+  border: 1px solid #9e9e9e40;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.QuickAccesImg img {
+  height: 90px;
+  width: 90px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+.challengeDescription{
+    line-height: 1;
+    font-size: 15px;
+}
+
+ .download  img {
+    height: 25px;
+    width: 25px;
+}
+.chooseDeriefFile input {
+    display: none;
+  }
+
+.aperçu{
+    height: 80px;
+    width: 90%;
+    box-shadow: 1px 1px 12px #5554;
+    margin: auto 0px;
+}
+.chooseDeriefFile{
+    width: 90%;
+    height: 40px;
+   padding-left: 60px;
+   border: 1px solid  #9e9e9e40;
+   border-radius: 5px;
+   padding: 2px 2px 0px 2px;
+}
+.chooseDeriefFile img{
+   height: 25px;
+   width: 25px;
+    margin-top: 3px;
+}
+.chooseDeriefFile  button{
+    background-color: #226575;
+    color: white;
+    border-radius: 5px;
+    height: 34px;
+   
+    margin: 0px;
+    
+   
+}
+
+
+
+.modal2 .div1
+{
+    height:400px;
+    margin: 20px;
+}
+
+
+.modal2 .div1{
+    width: 28%;
+    
+}
+
+
+ .modal2 .div2
+{
+    height:500px;
+   
+    width: 70%;  
+    box-shadow: 1px 1px 12px #5554;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    z-index: 1000;
+ 
+}
+.resultatFinal{
+    height: 60%;
+    margin-left: 30px;
+   
+}
+.resultatFinal p{
+    line-height: 0.2;
+    font-size: 15px;
+    font-size: bold;
+}
+
+.modal2 .div2 h2{
+    font-weight:bolder;
+}
+
+.classement{
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+
+.vainqueur{
+    color:#226575;
+}
+

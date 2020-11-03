@@ -29,6 +29,7 @@ import { DebriefCreatifComponent } from './debrief-creatif/debrief-creatif.compo
 import { DebriefCreatif2Component } from './debrief-creatif2/debrief-creatif2.component';
 import { DebriefCreatif3Component } from './debrief-creatif3/debrief-creatif3.component';
 import { ResultatFinalComponent } from './resultat-final/resultat-final.component';
+import { VoirProjetEnCoursCreatifComponent } from './voir-projet-en-cours-creatif/voir-projet-en-cours-creatif.component';
 
 
 
@@ -71,7 +72,8 @@ const appRoutes : Routes =[
     DebriefCreatifComponent,
     DebriefCreatif2Component,
     DebriefCreatif3Component,
-    ResultatFinalComponent
+    ResultatFinalComponent,
+    VoirProjetEnCoursCreatifComponent
     
      
   ],
