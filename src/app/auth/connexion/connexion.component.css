@@ -275,6 +275,50 @@ text-decoration: none;
 }
 
 
+.anim{
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  background: white;
+  position: absolute;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: 1.2s all ease;
+  z-index: 9;
+}
+.entreprise {
+  
+  transform: translate(69px,-90px) rotate(360deg);
+  
+}
+.talents{
+  
+  transform: translate(69px,49px) rotate(360deg);
+  
+}
+
+.entre, .tals{
+  
+  border-radius: 50%;
+ 
+}
+.entreprise:hover,.talents:hover{
+  background-color: #226575;
+ box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.2);
+ color: #fff;
+ transition: 1s;
+ z-index : 9;
+}
+
+.entreprise a , .talents a{
+  text-decoration: none;
+}
+
+
 
 
 

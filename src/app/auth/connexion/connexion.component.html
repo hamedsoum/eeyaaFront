@@ -11,13 +11,15 @@
   </div>
    <div class="container  justify-content-center" >
     <div class="row">
-        <div class="col">
-            <div class="buttonConnexionBorder" routerLink="/pageDacc">
+        <div class="col" (click) = togleDisplay()>
+          <div routerLink="/inscription/talents" class="entre"  [ngClass]="{'anim entreprise' : isDisplay, 'reviens' : !isDisplay}"><b>Talents</b></div>
+          <div class="buttonConnexionBorder">
                 <div class="logo">
                     <b>Inscription</b>
                 </div>
             </div>
-        </div>
+            <div routerLink="/inscription/entreprise" class="tals" [ngClass]="{'anim talents' : isDisplay, 'reviens' : !isDisplay}" ><b>Entreprise</b></div>
+         </div>
         <div class="col-10">
           <form>
             <div class="form-row">

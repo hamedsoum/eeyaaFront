@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./connexion.component.css']
 })
 export class ConnexionComponent implements OnInit {
-
-  constructor() { }
+  isDisplay = false ;
   logo : string = "./assets/images/logo.jpeg";
+  constructor() { }
+  
   ngOnInit(): void {
   }
-
+  
+  togleDisplay(){
+    
+    this.isDisplay = !this.isDisplay;
+    
+  }
 }
