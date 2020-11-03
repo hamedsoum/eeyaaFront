@@ -44,8 +44,13 @@ export class ProfilCreatifComponent implements OnInit {
     {
       url: "./assets/images/profil_Image/notes.png",
       name:"MESSAGE"
-    }
-  ];
+    },
+    {
+      url: "./assets/images/profil_Image/cloud.png",
+      name:"REFERENCEMENT"
+    },
+
+  ]
 
   personneConnecte = [
     {

@@ -48,19 +48,6 @@
 
 }
 
-.modal2 .div2{
-    height:500px;
-    margin: 15px;
-    text-align: center;
-    box-shadow: 1px 1px 12px #5554;
-}
-
-
-
-.modal2 .div2 h2{
-    font-weight: 600;
-}
-
 .quickAccess{
   width: 100%;
   margin:auto 0px ;
@@ -145,8 +132,38 @@
 
  .modal2 .div2
 {
+    height:500px;
+   
     width: 70%;  
     box-shadow: 1px 1px 12px #5554;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    z-index: 1000;
  
+}
+.resultatFinal{
+    height: 60%;
+    margin-left: 30px;
+   
+}
+.resultatFinal p{
+    line-height: 0.2;
+    font-size: 15px;
+    font-size: bold;
+}
+
+.modal2 .div2 h2{
+    font-weight:bolder;
+}
+
+.classement{
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+
+.vainqueur{
+    color:#226575;
 }
 

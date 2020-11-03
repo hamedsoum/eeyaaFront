@@ -26,6 +26,9 @@ import { ProfilCreatifComponent } from './profil-creatif/profil-creatif.componen
 import { GestionGainComponent } from './gestion-gain/gestion-gain.component';
 import { ModalChooseActionCreatifComponent } from './modal-choose-action-creatif/modal-choose-action-creatif.component';
 import { DebriefCreatifComponent } from './debrief-creatif/debrief-creatif.component';
+import { DebriefCreatif2Component } from './debrief-creatif2/debrief-creatif2.component';
+import { DebriefCreatif3Component } from './debrief-creatif3/debrief-creatif3.component';
+import { ResultatFinalComponent } from './resultat-final/resultat-final.component';
 
 
 
@@ -65,7 +68,10 @@ const appRoutes : Routes =[
     ProfilCreatifComponent,
     GestionGainComponent,
     ModalChooseActionCreatifComponent,
-    DebriefCreatifComponent
+    DebriefCreatifComponent,
+    DebriefCreatif2Component,
+    DebriefCreatif3Component,
+    ResultatFinalComponent
     
      
   ],
