@@ -6,48 +6,20 @@
       
         <div class="row ">
 
-              <div class="col-sm-1  col1 ">
-                <div   [ngClass]="{'sideBarshow' : sideBarOpen === true, 'sideBarhide' : sideBarOpen === false}" id="mySidenav" class="sidenav">
-                  <a href="javascript:void(0)" class="closebtn" (click)="closeMENU()"  >&times;</a>
-                  <div class="menutittle">
-                    Menu
-                  </div>
-                <div class="menuItems ">
-                  <div class="menuItem">
-                    <img [src]="menu1" alt="" srcset="">
-                    <p class="mt-5">Profil</p>
-                  </div>
-                  <div routerLink="/entrepriseTimeline" class="menuItem">
-                    <img [src]="menu2" alt="" srcset="">
-                    <p class="mt-5">Timeline</p>
-                  </div>
-                  <div class="menuItem">
-                    <img [src]="menu3" alt="" srcset="">
-                    <p class="mt-5">Formation</p>
-                  </div>
-                  <div class="menuItem">
-                    <img [src]="menu4" alt="" srcset="">
-                    <p class="mt-5">Presentation</p>
-                  </div>
-                  <div class="menuItem">
-                    <img [src]="menu5" alt="" srcset="">
-                    <p class="mt-5">Paramètre</p>
-                  </div>
-                </div>
-                </div>
-                <div class="colgauche bg-white ">
-                  <div class="logo">
-                    <img  [src]=" logo" alt="" srcset="">
-                  </div>
-                  <div  class="home">
-                    <img (click)="openMENU()" [src]=" home" alt="" srcset="">
-                  </div>
-                  <div class=" bg-light notif">
-                    <img  [src]=" notif" alt="" srcset="">
-                  </div>
-                  
-                </div>
-              </div>
+          <div class="col-sm-1  col1 ">
+            <div class="colgauche bg-white ">
+             <div class="logo">
+               <img  [src]=" logo" alt="" srcset="">
+             </div>
+             <div  class="home">
+               <app-menu></app-menu>
+             </div>
+             <div class=" bg-light notif">
+               <img  [src]=" notif" alt="" srcset="">
+             </div>
+             
+           </div>
+         </div>
 
               <div class="col-sm-8 col">
                  <div class="colMilieu">
