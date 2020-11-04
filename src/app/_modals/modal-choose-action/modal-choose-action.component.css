@@ -25,6 +25,7 @@
     border-radius: 5px;
     color: #226575;
     transition: all 2s linear;
+    cursor: pointer;
     
 }
 
@@ -123,7 +124,7 @@ select{
     padding: 4px 90px;
 }
 .type, .niveau{
-    padding: 4px 90px;
+    padding: 4px 0px 4px 110px;
 
 }
 #customFile{
