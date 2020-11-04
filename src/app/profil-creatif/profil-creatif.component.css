@@ -146,6 +146,7 @@ h1,h2,h3,h4,h5,h6{
     background-color: #226575;
     margin-left: 3px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .colgauche .notif{
@@ -200,6 +201,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   .QuickAccesImg img{
     height: 50px;
@@ -351,6 +353,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     font-size: 12px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .itemsWrappe:hover{

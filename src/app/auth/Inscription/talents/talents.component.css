@@ -208,6 +208,12 @@ text-decoration: none;
     outline: none;
   }
 
+  .sexe{
+    margin: 0px;
+    font-size: 15px;
+    color: white;
+  }
+
   ::placeholder {
     color:white;
     font-size:13px ;
@@ -216,7 +222,7 @@ text-decoration: none;
 
    .textLeft{
     text-align: left;
-    margin-left:  20px;
+   
     font-size: 13px;
     color: white;
   }
@@ -226,6 +232,21 @@ text-decoration: none;
     color: white;
     font-size: 13px;
   }
+  input[type="radio" i] {
+    background-color: red  !important;
+    cursor: default;
+    appearance: radio;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: none;
+}
+select{
+  font-size: 13px;
+  height: 38px;
+  text-align: center;
+  padding: 0px 23px;
+}
 
   .form input[type = "password"],.form input[type = "email"],.form input[type = "text"]
   {
@@ -278,9 +299,7 @@ text-decoration: none;
 
 
 .content .next:hover {
-  color: #226575;
-  border: 1px solid  #226575;
- box-shadow: 8px 4px 0 #226575;
+ 
   width: 70px;
   height: 70px;
   transition: 0.5s;

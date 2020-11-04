@@ -36,12 +36,12 @@ export class ProfilEntrepriseComponent implements OnInit {
       },
       {
         url: "./assets/images/profil_Image/recruitment.png",
-        name: "PUBLICATION"
+        name: "PUBLICATIONS"
 
       },
       {
         url: "./assets/images/profil_Image/notes.png",
-        name:"MESSAGE"
+        name:"MESSAGERIE"
       }
     ];
 

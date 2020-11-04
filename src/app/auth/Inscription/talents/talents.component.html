@@ -6,8 +6,8 @@
      </div>
      <div class="application">
       <p class="title">Inscription</p>
-      <div class="Description">Cher talent veuillez s'il vous plait renseigner les champs d'Inscription <br/> 
-         NB:Les champs  obligatoires sont indiqué avec un asterix (*)</div>
+      <div class="Description">Cher talent, veuillez s'il vous plaît renseigner les champs d'Inscription <br/> 
+         NB:Les champs  obligatoires sont indiqués avec un asterix (*)</div>
     </div>
      <div class="container  justify-content-center" >
       <div class="row">
@@ -45,25 +45,39 @@
               
               <div class="form-row mt-2 mb-5">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Pseudo*">
+                  <select class="form-control ">
+                    <option>niveau</option>
+                  </select>                
                 </div>
                 <div class="col">
                   <input type="email" class="form-control" placeholder="Date de naissance*">
                 </div>
                 <div class="col">
-                  <input type="password" class="form-control" placeholder="Nationnalit*">
+                  <input type="password" class="form-control" placeholder="Nationalité*">
                 </div>
                 <div class="col">
                   <input type="password" class="form-control" placeholder="Contact*">
                 </div>
               </div>
-              
+                  <p class="sexe">Sexe</p>
+                 <div class="form-check form-check-inline  textLeft">
+                <input  class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Masculin
+                </label>
+              </div>
+              <div class="form-check form-check-inline textRight">
+                <input  class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                 Feminin
+                </label>
+              </div>
             </form>
           </div>
           <div class="col" >
               <div  class="buttonTalentInscriptionBoder" routerLink="/connexion">
                   <div class="logo">
-                       <b>connexions</b> 
+                       <b>connexion</b> 
                    </div>
               </div>
            </div>

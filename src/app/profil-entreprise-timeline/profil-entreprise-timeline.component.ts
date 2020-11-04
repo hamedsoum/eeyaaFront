@@ -13,11 +13,14 @@ export class ProfilEntrepriseTimelineComponent implements OnInit {
   folder : string = "./assets/images/profil_Image/folder.png";
   imgTimeline1 : string = "./assets/images/profil_Image/1.png";
   comment : string = "./assets/images/profil_Image/comment.png";
+  like : string = "./assets/images/profil_Image/like (2).png";
   note : string = "./assets/images/profil_Image/note.png";
   timelineImg2 : string = "./assets/images/profil_Image/2.png";
   timelineImg3 : string = "./assets/images/profil_Image/3.png";
   timelineImg4 : string = "./assets/images/profil_Image/4.png";
+  crayon : string =  "./assets/images/profil_Image/crayon.png";
   medal : string = "./assets/images/profil_Image/4.png";
+  medale : string = "./assets/images/profil_Image/medal.png";
   sideBarOpen :boolean = false;
   menu1 : string = "./assets/images/profil_Image/Menu-1-profilB.png";
   menu2 : string = "./assets/images/profil_Image/Menu-2-timelineB.png";

@@ -118,6 +118,7 @@ h1,h2,h3,h4,h5,h6{
     background-color: #226575;
     margin-left: 3px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .colgauche .notif{
@@ -282,6 +283,7 @@ h1,h2,h3,h4,h5,h6{
     width: 30px;
   
   }
+  
 
   .timelineContent2{
       height: 80%;
@@ -293,6 +295,49 @@ h1,h2,h3,h4,h5,h6{
       font-size: 36px;
       font-weight: 700;
   }
+
+  .timelineContent2 p img{
+    height: 10px;
+    width: 10px;
+  }
+
+  
+ .modal2 .div2
+ {
+     height:500px;
+    
+     width: 70%;  
+     box-shadow: 1px 1px 12px #5554;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: left;
+     z-index: 1000;
+  
+ }
+ .resultatFinal{
+     height: 60%;
+     margin-left: 30px;
+    
+ }
+ .resultatFinal p{
+     line-height: 0.2;
+     font-size: 15px;
+     font-size: bold;
+ }
+ 
+ .modal2 .div2 h2{
+     font-weight:bolder;
+ }
+ 
+ .classement{
+     margin-top: 40px;
+     margin-bottom:40px;
+ }
+ 
+ .vainqueur{
+     color:#226575;
+ }
 
 
   .timeline .timelineContent .timelineContent3{
@@ -326,6 +371,7 @@ h1,h2,h3,h4,h5,h6{
     left: 7%;
     color: black;
     opacity: 1;
+    box-shadow: 0 14px 28px rgb(230 230 230), 0 10px 10px rgba(0,0,0,0.22);
   }
   .carousel-control-next{
     border-radius: 50%;
@@ -337,7 +383,7 @@ h1,h2,h3,h4,h5,h6{
     right: 27%;
     color: black;
     opacity: 1;
-    
+    box-shadow: 0 14px 28px rgb(230 230 230), 0 10px 10px rgba(0,0,0,0.22);
   }
   
   /*END timeline*/

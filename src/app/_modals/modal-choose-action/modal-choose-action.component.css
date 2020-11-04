@@ -119,6 +119,15 @@ select{
     color: black;
     font-weight: bold;
     font-size: 16px;
+    border: none;
+    padding: 4px 90px;
+}
+.type, .niveau{
+    padding: 4px 90px;
+
+}
+#customFile{
+    display: none;
 }
 input{
     border: none;

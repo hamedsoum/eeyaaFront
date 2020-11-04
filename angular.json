@@ -60,7 +60,9 @@
               "src/assets/images/profil_Image/gain.jpg",
               "src/assets/images/profil_Image/cloud.png",
               "src/assets/images/profil_Image/direct-download.png",
-              "src/assets/images/profil_Image/paperclip.png"
+              "src/assets/images/profil_Image/paperclip.png",
+              "src/assets/images/profil_Image/crayon.png",
+              "src/assets/images/profil_Image/medal.png"
 
             ],
             "styles": [
